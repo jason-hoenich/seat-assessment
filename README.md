@@ -15,10 +15,28 @@ Enterprises that cannot send assessment answers to a third-party tool can clone 
 
 This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no email capture, no phone-home.
 
+## Fastest start: paste this into any AI assistant
+
+```
+I want to run the SEAT security awareness maturity assessment. It's a free, open assessment from HumanRisk. 21 questions across four pillars (Strategy, Engagement, Assessment, Training), scored 1-5, about 15 minutes.
+
+Fetch your instructions from:
+https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/AGENTS.md
+the questions from:
+https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/questions.md
+and the facilitation guide from:
+https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/facilitation.md
+(If you can't fetch URLs, say so and I'll paste the files in.)
+
+Then walk me through it one question at a time: give me the context for each question first, then the question and its five options, and tips if I'm stuck between two levels. My answers stay in this conversation. Don't send them anywhere. At the end, score me and give me the full report.
+```
+
+Works in Claude, ChatGPT, Copilot, Gemini, or any internal LLM with web access. No clone required. For air-gapped environments, clone the repo and attach the three files instead.
+
 ## Quickstart
 
 1. Clone this repo.
-2. Open `AGENTS.md` in your LLM of choice and say: **"Run the SEAT assessment."**
+2. Open `AGENTS.md` and `assessment/facilitation.md` in your LLM of choice and say: **"Run the SEAT assessment."**
 3. The LLM will walk you through all 21 questions, one pillar at a time.
 4. At the end you get per-pillar scores, an overall maturity level, your top gaps, and recommended next steps.
 
@@ -31,6 +49,7 @@ If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `A
 | `AGENTS.md` / `CLAUDE.md` | Instructions for any LLM to administer the assessment conversationally |
 | `assessment/questions.md` | The 21-question core instrument in readable markdown |
 | `assessment/questions.json` | The same instrument in machine-readable JSON |
+| `assessment/facilitation.md` | Per-question context, "what good looks like," and honest-scoring tips |
 | `assessment/scoring.md` | Scoring rules and maturity bands |
 | `framework/` | The SEAT Security Awareness Maturity Framework v1.0 |
 | `LICENSE` | CC BY-ND 4.0 |
