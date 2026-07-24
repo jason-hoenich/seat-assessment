@@ -26,6 +26,7 @@ the questions from:
 https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/questions.md
 and the facilitation guide from:
 https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/facilitation.md
+and note there's an adapters/ directory with compliance framework mappings you can apply after scoring.
 (If you can't fetch URLs, say so and I'll paste the files in.)
 
 Then walk me through it one question at a time: give me the context for each question first, then the question and its five options, and tips if I'm stuck between two levels. My answers stay in this conversation. Don't send them anywhere. At the end, score me and give me the full report.
@@ -39,6 +40,7 @@ Works in Claude, ChatGPT, Copilot, Gemini, or any internal LLM with web access. 
 2. Open `AGENTS.md` and `assessment/facilitation.md` in your LLM of choice and say: **"Run the SEAT assessment."**
 3. The LLM will walk you through all 21 questions, one pillar at a time.
 4. At the end you get per-pillar scores, an overall maturity level, your top gaps, and recommended next steps.
+5. After scoring, you can map results to any compliance framework (NIST CSF, NIS2, DORA, PCI DSS, AI frameworks, and more) using the files in `adapters/`.
 
 If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `AGENTS.md`.
 
@@ -51,7 +53,9 @@ If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `A
 | `assessment/questions.json` | The same instrument in machine-readable JSON |
 | `assessment/facilitation.md` | Per-question context, "what good looks like," and honest-scoring tips |
 | `assessment/scoring.md` | Scoring rules and maturity bands |
+| `adapters/` | Compliance framework mappings (NIST CSF, NIS2, DORA, PCI DSS, AI frameworks, and 10 more) |
 | `framework/` | The SEAT Security Awareness Maturity Framework v1.0 |
+| `SECURITY.md` | Integrity verification and canonical source policy |
 | `LICENSE` | CC BY-ND 4.0 |
 
 ## The hosted version

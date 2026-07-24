@@ -1,0 +1,4124 @@
+{
+  "scoring_thresholds": {
+    "Required": 4.5,
+    "Expected": 2.5,
+    "Recommended": 1.5
+  },
+  "outcomes": [
+    {
+      "id": "strategic-alignment",
+      "name": "Strategic Alignment",
+      "pillar": "strategy",
+      "questions": [
+        1,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "governance-documentation",
+      "name": "Governance Documentation",
+      "pillar": "strategy",
+      "questions": [
+        2
+      ]
+    },
+    {
+      "id": "executive-support",
+      "name": "Executive Support",
+      "pillar": "strategy",
+      "questions": [
+        3
+      ]
+    },
+    {
+      "id": "continuous-improvement",
+      "name": "Continuous Improvement",
+      "pillar": "strategy",
+      "questions": [
+        4,
+        8,
+        14
+      ]
+    },
+    {
+      "id": "targeted-communication",
+      "name": "Targeted Communication",
+      "pillar": "engagement",
+      "questions": [
+        9,
+        11
+      ]
+    },
+    {
+      "id": "cultural-relevance",
+      "name": "Cultural Relevance",
+      "pillar": "engagement",
+      "questions": [
+        12
+      ]
+    },
+    {
+      "id": "active-participation",
+      "name": "Active Participation",
+      "pillar": "engagement",
+      "questions": [
+        10
+      ]
+    },
+    {
+      "id": "feedback-responsiveness",
+      "name": "Feedback Responsiveness",
+      "pillar": "engagement",
+      "questions": [
+        13
+      ]
+    },
+    {
+      "id": "performance-measurement",
+      "name": "Performance Measurement",
+      "pillar": "assessment",
+      "questions": [
+        5,
+        16
+      ]
+    },
+    {
+      "id": "risk-driven-assessment",
+      "name": "Risk Driven Assessment",
+      "pillar": "assessment",
+      "questions": [
+        15
+      ]
+    },
+    {
+      "id": "behavioral-impact",
+      "name": "Behavioral Impact",
+      "pillar": "assessment",
+      "questions": []
+    },
+    {
+      "id": "behavioral-impact-assessment",
+      "name": "Behavioral Impact Assessment",
+      "pillar": "assessment",
+      "questions": []
+    },
+    {
+      "id": "relevant-tailored-training",
+      "name": "Relevant Tailored Training",
+      "pillar": "training",
+      "questions": [
+        17
+      ]
+    },
+    {
+      "id": "effective-learning-methods",
+      "name": "Effective Learning Methods",
+      "pillar": "training",
+      "questions": [
+        18
+      ]
+    },
+    {
+      "id": "accessible-inclusive-training",
+      "name": "Accessible Inclusive Training",
+      "pillar": "training",
+      "questions": [
+        19
+      ]
+    },
+    {
+      "id": "flexible-effective-delivery",
+      "name": "Flexible Effective Delivery",
+      "pillar": "training",
+      "questions": [
+        20
+      ]
+    },
+    {
+      "id": "integrated-training-lifecycle",
+      "name": "Integrated Training Lifecycle",
+      "pillar": "training",
+      "questions": [
+        21
+      ]
+    }
+  ],
+  "adapters": {
+    "nist-csf-2.0": {
+      "name": "NIST Cybersecurity Framework 2.0",
+      "version": "2.0",
+      "description": "Mapping of SEAT outcomes to NIST CSF 2.0 controls and practices.",
+      "officialLink": "https://www.nist.gov/cyberframework",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-03, GV.PO-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Cybersecurity risk management activities and outcomes are included in enterprise risk management processes. Policy for managing cybersecurity risks is established based on organizational context."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01, GV.PO-02",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Policy for managing cybersecurity risks is established and regularly reviewed, updated, communicated, and enforced."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RM-01, GV.RR-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Risk management objectives are established and agreed to by organizational stakeholders. Roles, responsibilities, and authorities for cybersecurity are established."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GV.OV-01, ID.IM-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Results of organization-wide cybersecurity risk management activities are used to inform and adjust the risk management strategy."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "PR.AT-02",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Individuals in specialized roles are provided with awareness and training tailored to their specific responsibilities."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "PR.AT-01",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Feedback Survey"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Personnel are provided with awareness and training that is culturally appropriate and accessible."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "PR.AT-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Fostering a security-aware culture that encourages active employee participation in security initiatives."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "ID.IM-01, RS.CO-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Continuous evaluation is applied to identify improvements based on stakeholder feedback."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "GV.OV-01, ID.RA-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Results of cybersecurity risk management activities and performance are tracked and used to inform strategy."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "ID.RA-01, GV.RM-03",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Cybersecurity risks are identified and understood, informing awareness program priorities."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "PR.AT-01, DE.CM-01",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Monitoring and assessing changes in employee security behaviors and incident response."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "PR.AT-02",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Training content is specific to roles and identified organizational risks."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "PR.AT-01",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Utilizing engaging and practical training approaches that demonstrate effectiveness."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "PR.AT-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Ensuring training is available and understandable to all personnel regardless of role or background."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "PR.AT-01",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Optimizing training delivery for behavioral impact and knowledge retention rather than fixed time requirements."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "PR.AT-01, PR.AT-02",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Embedding training into employee lifecycle from onboarding through ongoing professional development."
+        }
+      ]
+    },
+    "pci-dss-4.0": {
+      "name": "PCI DSS 4.0",
+      "version": "4.0",
+      "description": "Mapping of SEAT outcomes to PCI DSS 4.0 requirements.",
+      "officialLink": "https://www.pcisecuritystandards.org/document_library/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "12.3, 12.3.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Risk Assessment",
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "PCI DSS 4.0 emphasizes targeted risk analysis to align security measures with specific risks to the CDE."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "12.1, 12.5.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Formal, documented policies and procedures are foundational for PCI DSS compliance."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "12.4.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Executive oversight and resource allocation are critical for maintaining compliance. Required for service providers."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "12.6.2, 12.3, 12.10.6",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Other"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "PCI DSS 4.0 promotes security as a continuous process, requiring regular updates based on new threats."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "12.6.1, 12.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Communication Artifact",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Training must be provided to all personnel, tailored to their roles and specific threats."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "12.6",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "While not explicitly called out, effective awareness programs consider cultural context for better engagement."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "12.6.3.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Encouraging and enabling personnel to report suspicious activities is a direct PCI DSS requirement."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "12.6.4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "Feedback mechanisms, especially acknowledgements, are required and should drive program improvements."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "12.6.2, 12.3.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Metrics are essential for demonstrating the effectiveness of the awareness program and informing TRAs."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "12.3, 12.3.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Risk Assessment",
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "PCI DSS 4.0 mandates targeted risk analyses to ensure security controls, including awareness, address specific risks."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "12.6.3.1, 12.6.3.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Assessing behavioral changes related to phishing and incident reporting is directly supported by PCI DSS."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "12.6.3, 6.2.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Training must be tailored to job roles and cover specific threats relevant to the CDE."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "12.6",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "PCI DSS encourages engaging and effective training methods to ensure understanding and retention."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "12.6.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Training must be accessible to all personnel who impact CDE security."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "12.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "PCI DSS is prescriptive about annual training frequency, but content delivery can be flexible as long as requirements are met."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "12.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Training is required upon hire and annually, integrating it into the employee lifecycle."
+        }
+      ]
+    },
+    "dora": {
+      "name": "Digital Operational Resilience Act (DORA)",
+      "version": "1.0",
+      "description": "Mapping of SEAT outcomes to DORA requirements for financial entities.",
+      "officialLink": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R2554",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Art. 5, Art. 6",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "DORA mandates that ICT risk management is integrated into overall risk management and overseen by the management body."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Art. 6, Art. 13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Comprehensive documentation of the ICT risk management framework and awareness programs is a core requirement."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Art. 5",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "DORA places ultimate responsibility for ICT risk and digital operational resilience on the management body, requiring their active engagement and training."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Art. 6, Art. 13, Art. 17, Art. 24",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report",
+            "Action Plan"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "DORA emphasizes continuous improvement of digital operational resilience based on incidents, testing, and evolving risks."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Art. 13, Art. 14",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "DORA requires comprehensive awareness programs and clear communication strategies for incidents, tailored where necessary."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "While not explicitly stated, effective awareness programs should consider cultural context for better engagement and understanding."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Art. 17, Art. 45",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "DORA requires robust incident reporting processes and encourages participation in information sharing arrangements."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "Art. 17",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey",
+            "Action Plan"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Learning from incidents and addressing feedback is crucial for improving resilience."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Art. 6, Art. 13, Art. 24",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "DORA requires continuous monitoring and regular testing to measure and enhance digital operational resilience."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Art. 6, Art. 24",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Risk assessments and testing are fundamental to DORA, driving the focus of resilience efforts."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "Art. 26",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Triennial",
+          "notes": "DORA's advanced testing (TLPT) implicitly assesses human behavior and response to sophisticated threats."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Training must be tailored to the roles and responsibilities of staff, including senior management."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "DORA implies that training methods should be effective in enhancing cyber maturity and preparedness."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Training must be accessible and compulsory for all relevant personnel."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "While annual training is compulsory, the delivery should be effective in building resilience."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Art. 13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Training is a continuous and compulsory part of staff development under DORA."
+        }
+      ]
+    },
+    "soc2": {
+      "name": "SOC 2",
+      "version": "2017 TSC",
+      "description": "Mapping of SEAT outcomes to SOC 2 Trust Services Criteria (TSC) and Common Criteria (CC).",
+      "officialLink": "https://www.aicpa.org/interestareas/frc/assuranceadvisoryservices/aicpasoc2report",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "CC3.1, CC9.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Aligning security awareness with overall risk management and organizational objectives through risk identification and assessment."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "CC2.1, CC5.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Formal documentation and regular review of program governance and controls to support internal control functioning."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "CC1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Leadership commitment and oversight for the control environment, with board exercising independent oversight."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "CC4.1, CC7.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Regular assessment and adaptation of the program based on ongoing monitoring and evaluation findings."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Tailoring communications and training to specific roles and groups to improve security knowledge and behavior."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "CC1.1",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Fostering a security-aware culture that aligns with organizational values and commitment to integrity."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "CC2.2, CC7.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Encouraging and measuring active employee involvement in security initiatives, including modeling appropriate security behaviors."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "CC4.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Establishing and acting on employee feedback channels to improve control effectiveness through ongoing evaluations."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "CC4.1, CC7.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Tracking and reporting program effectiveness using KPIs and continuous monitoring procedures."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "CC3.1, CC9.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Using risk assessments to guide awareness content and priorities through systematic risk identification and response."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "CC2.2, CC7.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Assessing changes in employee security behaviors and their impact on security posture through training programs."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Training content is specific to roles and identified risks, tailored to improve security knowledge and behavior."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Utilizing engaging and practical training approaches that demonstrate effectiveness in improving security behaviors."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Ensuring training is available and understandable to all relevant personnel through comprehensive awareness programs."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Optimizing training delivery for behavioral impact and knowledge retention, while meeting program requirements."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "CC2.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Embedding training into employee lifecycle from onboarding through ongoing professional development."
+        }
+      ]
+    },
+    "cmmc": {
+      "name": "Cybersecurity Maturity Model Certification (CMMC)",
+      "version": "2.0",
+      "description": "Mapping of SEAT outcomes to CMMC 2.0 practices for defense contractors handling CUI.",
+      "officialLink": "https://www.acq.osd.mil/cmmc/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "RM.L2-3.11.1, GOV.L2-P1.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "CMMC requires periodic risk assessment and a documented cybersecurity program plan that aligns with organizational objectives."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GOV.L2-P1.1, GOV.L2-P1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "CMMC mandates documented cybersecurity program plans, policies, and procedures for all practices."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GOV.L2-P1.1, GOV.L2-P1.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Other",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Leadership commitment and adequate resource allocation are critical for CMMC compliance and program effectiveness."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GOV.L2-P1.4, AT.L2-3.1.5",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "CMMC requires ongoing monitoring of cybersecurity program effectiveness and updating training as needed."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "AT.L2-3.1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Curriculum Document",
+            "Communication Artifact"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "CMMC requires security awareness training that addresses risks associated with specific activities and organizational policies."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "AT.L2-3.1.2",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Effective awareness programs consider organizational context and culture to improve engagement and understanding."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "IR.L2-3.6.1, AT.L2-3.1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "CMMC requires operational incident handling capability and training on reporting procedures."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "AT.L2-3.1.5, GOV.L2-P1.4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "CMMC requires updating training based on evolving needs and program effectiveness reviews."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "AT.L2-3.1.4, GOV.L2-P1.4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "CMMC mandates annual security awareness training and monitoring of cybersecurity program effectiveness."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "RM.L2-3.11.1, AT.L2-3.1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Curriculum Document",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "CMMC requires periodic risk assessment and training that addresses identified organizational risks."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "AT.L2-3.1.4, IR.L2-3.6.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Assessing behavioral changes through simulations and incident data supports CMMC compliance verification."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "AT.L2-3.1.2, AT.L3-3.1.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "CMMC requires training tailored to roles and specific organizational risks, with specialized training for privileged functions."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "AT.L2-3.1.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "CMMC implies that training methods should effectively inform personnel about risks and procedures."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "AT.L2-3.1.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "CMMC requires security awareness training for all information system users, including personnel and contractors."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "AT.L2-3.1.4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "CMMC specifies minimum annual training frequency, but effective delivery methods are implied for compliance."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "AT.L2-3.1.1, AT.L2-3.1.4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "CMMC requires initial and recurring security awareness training for all information system users."
+        }
+      ]
+    },
+    "iso27001": {
+      "name": "ISO 27001",
+      "version": "2022",
+      "description": "Mapping of SEAT outcomes to ISO/IEC 27001:2022 requirements for Information Security Management Systems (ISMS).",
+      "officialLink": "https://www.iso.org/standard/27001",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Clause 6.1.2, A.5.10, A.5.22",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The ISMS must align with the organization's context, risk appetite, and strategic direction through risk assessment and information security planning."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Clause 7.5, A.5.1, A.5.13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Comprehensive and controlled documented information is fundamental to an ISO 27001 ISMS, including policies and procedures."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Clause 5.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Top management must demonstrate leadership and commitment to the ISMS, including providing adequate resources."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Clause 10.1, A.5.16, A.5.26",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The ISMS must be continually improved based on performance monitoring, incident learning, and changing circumstances."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Clause 7.3, A.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Personnel must be aware of the information security policy, their contribution to the ISMS, and implications of non-conformance."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "Clause 7.3, A.6.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Awareness efforts should be designed to resonate with the organization's culture and diverse workforce for maximum effectiveness."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Clause 7.3, A.5.15",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Personnel should understand their role in incident reporting and actively contribute to information security objectives."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "Clause 10.1, A.5.16",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Mechanisms for collecting and acting on feedback are crucial for ISMS continual improvement and incident learning."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Clause 9.1, A.5.25",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "The performance and effectiveness of the ISMS, including awareness programs, must be monitored, measured, and evaluated."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Clause 6.1.2, A.5.22",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Risk assessments drive the selection of controls and inform the content and focus of awareness and training programs."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "Clause 9.1, A.6.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Evaluating the effectiveness of awareness and training should include assessing changes in employee security behavior."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Clause 7.2, A.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Training content must be appropriate for the roles and responsibilities of personnel, based on identified competence needs."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "Clause 7.2, A.6.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Training methods should be effective in achieving the desired competence and awareness levels for information security."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Clause 7.2, A.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Training and awareness materials must be accessible and provided to all relevant personnel and interested parties."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "Clause 7.2, A.6.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Delivery methods should be flexible to ensure effective learning and retention across the diverse organizational workforce."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Clause 7.2, A.6.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Training and awareness should be integrated into the employee lifecycle, from onboarding through ongoing competence development."
+        }
+      ]
+    },
+    "gdpr": {
+      "name": "General Data Protection Regulation (GDPR)",
+      "version": "2016/679",
+      "description": "Mapping of SEAT outcomes to GDPR articles and principles, focusing on data protection awareness and accountability.",
+      "officialLink": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32016R0679",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Art. 5(2), Art. 24, Art. 25, Art. 32",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report",
+            "Other"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "GDPR requires a strategic approach to data protection, embedding it by design and default, and demonstrating accountability."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Art. 5(2), Art. 24, Art. 30, Art. 32",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Comprehensive documentation is key to demonstrating GDPR compliance, including policies, procedures, and records of processing."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Art. 5(2), Art. 24, Art. 39",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Other"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Top management is ultimately responsible for GDPR compliance and must ensure adequate resources and oversight."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Art. 5(2), Art. 24, Art. 32, Art. 33, Art. 34",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report",
+            "Other"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "GDPR implies continuous improvement through regular review of security measures and learning from data breaches."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Art. 12, Art. 13, Art. 14",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Clear and transparent communication with data subjects about their rights and data processing activities is fundamental."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "Art. 5(1)(a), Recital 78",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Fostering a data protection culture within the organization is crucial for effective compliance."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Art. 15-22, Art. 33",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Enabling data subjects to exercise their rights and ensuring personnel understand breach reporting obligations."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "Art. 12, Art. 33, Art. 34",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Prompt and effective response to data subject requests and data breaches is a core GDPR requirement."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Art. 5(2), Art. 24, Art. 32",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Organizations must be able to demonstrate compliance with GDPR principles and the effectiveness of their measures."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Art. 32, Art. 35",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "As Needed",
+          "notes": "A risk-based approach, including DPIAs for high-risk processing, is central to GDPR compliance."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "Art. 32(1)(d)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Assessing the impact of training on employee behavior contributes to the overall security of processing."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Art. 32(4)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Personnel handling personal data must receive appropriate and tailored training on data protection principles and procedures."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "Art. 32(1)(d)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Training methods should be effective in ensuring personnel understand their data protection responsibilities."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Art. 32(4)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Training must be accessible and provided to all personnel who process personal data."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "Art. 32(1)(d)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Delivery methods should be flexible to ensure effective learning and retention of data protection knowledge."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Art. 32(4)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Data protection training should be integrated into the employee lifecycle, from onboarding through ongoing development."
+        }
+      ]
+    },
+    "nis2": {
+      "name": "NIS2 Directive",
+      "version": "2022/2555",
+      "description": "Mapping of SEAT outcomes to NIS2 Directive requirements for essential and important entities.",
+      "officialLink": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022L2555",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Art. 21, Art. 23",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "NIS2 requires cybersecurity risk management measures to be integrated into overall risk management and aligned with business continuity planning."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Art. 21, Art. 23",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Comprehensive documentation of cybersecurity policies, procedures, and risk management measures is mandatory under NIS2."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Art. 20",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "NIS2 places direct responsibility on management bodies for cybersecurity risk management and requires their active oversight."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Art. 21, Art. 23",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "NIS2 emphasizes continuous improvement of cybersecurity measures based on evolving threats and incident learnings."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Art. 21(2)(g)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Art. 21(2)(g) requires basic cyber hygiene practices and cybersecurity training. Effective delivery requires communications tailored to different roles and responsibilities."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "Art. 21(2)(g), Art. 20(2)",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Communication Artifact"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "NIS2 Art. 20(2) requires management bodies to follow training and encourages regular employee training. Building a security culture where training is valued, not resented, supports this mandate."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Art. 23, Art. 24",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "NIS2 requires robust incident reporting processes and encourages active participation in cybersecurity initiatives."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "Art. 23",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Learning from incidents and addressing feedback is crucial for improving cybersecurity resilience under NIS2."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Art. 21(2)(f)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report",
+            "Effectiveness Review",
+            "Maturity Score Trends",
+            "Gap Analysis"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "Art. 21(2)(f) explicitly mandates policies and procedures to assess the effectiveness of cybersecurity risk-management measures. This is the most significant departure from US frameworks -- not whether controls exist, but whether they work. SEAT maturity assessments directly satisfy this requirement."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Art. 21(1), Art. 21(2)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Risk assessment is fundamental to NIS2, driving the selection and implementation of appropriate cybersecurity measures."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "Art. 21(2)(f), Art. 21(2)(g)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report",
+            "Behavioral Change Metrics",
+            "Pre/Post Training Comparison"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Art. 21(2)(f) requires effectiveness assessment. For awareness programs, behavioral impact data is the primary evidence that training (Art. 21(2)(g)) is producing results. Without behavioral measurement, effectiveness claims are unsupported."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Art. 21(2)(g), Art. 20(2)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Role-Specific Content Map"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Art. 21(2)(g) requires basic cyber hygiene practices and cybersecurity training. Art. 20(2) requires management bodies to follow training themselves. Together, these mandate training at every level of the organization with content appropriate to each audience."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "Art. 21(2)(g), Art. 21(2)(f)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey",
+            "Effectiveness Metrics"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Art. 21(2)(f) requires effectiveness assessment of all cybersecurity measures, including training. Methods must be demonstrably effective, not just delivered. Track comprehension and behavioral change, not just completion."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Art. 21(2)(g)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Accessibility Documentation",
+            "Coverage Reports"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Art. 21(2)(g) applies to basic cyber hygiene practices for all personnel. Training must reach every employee, including remote workers, contractors within scope, and staff with accessibility needs."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "Art. 21(2)(g)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Delivery Method Documentation"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Art. 21(1) proportionality principle applies to delivery -- methods should be appropriate to the entity size and risk profile. A 200-person manufacturer and a 5,000-person hospital need different delivery approaches."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Art. 21(2)(g), Art. 21(2)(i)",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Onboarding Checklist",
+            "Role-Change Retraining Records"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Art. 21(2)(i) covers human resources security across the employee lifecycle. Combined with Art. 21(2)(g) training requirements, this means cybersecurity training must be embedded in onboarding, role changes, and offboarding -- not treated as a standalone annual event."
+        }
+      ]
+    },
+    "mitre-attack": {
+      "name": "MITRE ATT&CK Framework",
+      "version": "v14.1",
+      "description": "Mapping of SEAT outcomes to MITRE ATT&CK tactics and techniques for adversary behavior analysis and defense planning.",
+      "officialLink": "https://attack.mitre.org/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "TA0043 - Reconnaissance, TA0042 - Resource Development",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Strategic alignment helps defend against reconnaissance and resource development phases by ensuring awareness programs address threat actor methodologies and organizational attack surface."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "TA0040 - Impact, TA0010 - Exfiltration",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Other"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "Comprehensive documentation supports incident response and helps prevent impact and exfiltration by establishing clear procedures and responsibilities."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "TA0001 - Initial Access, TA0003 - Persistence",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Executive support is crucial for defending against initial access and persistence tactics, as leadership commitment drives consistent security practices across the organization."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "TA0011 - Command and Control, TA0009 - Collection",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Continuous improvement helps adapt defenses against evolving command and control and collection techniques by incorporating threat intelligence and lessons learned."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "T1566 - Phishing, T1204 - User Execution",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "Targeted communication directly counters phishing and user execution techniques by educating users about specific threats relevant to their roles and responsibilities."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "T1534 - Internal Spearphishing, T1192 - Spearphishing Link",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Cultural relevance helps defend against targeted spearphishing attacks by ensuring security messages resonate with diverse workforce segments and cultural contexts."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "T1078 - Valid Accounts, T1110 - Brute Force",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Active participation helps detect and prevent valid account abuse and brute force attacks through user reporting of suspicious activities and adherence to security practices."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "T1190 - Exploit Public-Facing Application, T1133 - External Remote Services",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Responsive feedback mechanisms help identify and address vulnerabilities in public-facing applications and remote services through user observations and reports."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "T1059 - Command and Scripting Interpreter, T1105 - Ingress Tool Transfer",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Performance measurement helps detect command and scripting interpreter abuse and ingress tool transfer by tracking user behavior patterns and security awareness effectiveness."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "T1021 - Remote Services, T1055 - Process Injection",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Risk-driven assessments inform awareness priorities about remote services abuse and process injection techniques based on organizational threat landscape and attack patterns."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "T1036 - Masquerading, T1027 - Obfuscated Files or Information",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Behavioral impact assessment measures user ability to identify masquerading and obfuscated threats through simulations and real-world incident response."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "T1547 - Boot or Logon Autostart Execution, T1053 - Scheduled Task/Job",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Assessment of behavioral changes helps detect persistence mechanisms like autostart execution and scheduled tasks through improved user awareness and reporting."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "T1566.001 - Spearphishing Attachment, T1566.002 - Spearphishing Link",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Tailored training directly addresses spearphishing attachment and link techniques by providing role-specific scenarios and threat examples relevant to user responsibilities."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "T1598 - Phishing for Information, T1593 - Search Open Websites/Domains",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Effective learning methods help users recognize phishing for information and open source intelligence gathering attempts through interactive and engaging training approaches."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "T1589 - Gather Victim Identity Information, T1591 - Gather Victim Org Information",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Accessible training ensures all personnel understand how attackers gather victim identity and organizational information, promoting consistent security practices across diverse workforce."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "T1195 - Supply Chain Compromise, T1199 - Trusted Relationship",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Flexible delivery methods help address complex threats like supply chain compromise and trusted relationship abuse through varied training formats and timely updates."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "T1200 - Hardware Additions, T1091 - Replication Through Removable Media",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Onboarding",
+          "notes": "Integrated training lifecycle ensures consistent awareness of physical security threats like hardware additions and removable media attacks from onboarding through career development."
+        }
+      ]
+    },
+    "cri": {
+      "name": "Cyber Resilience Initiative (CRI)",
+      "version": "2.1",
+      "description": "Comprehensive mapping of SEAT outcomes to CRI Profile v2.1 requirements for financial institutions focusing on operational resilience and cyber risk management.",
+      "officialLink": "https://www.cisa.gov/cross-sector-cybersecurity-performance-goals",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.OC-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity strategies, architectures, and programs are formally governed to align with and support the organization's mission, objectives, priorities, tactical initiatives, and risk profile."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "GV.OC-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report",
+            "Training Record",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization's obligation to its customers, employees, and stakeholders to maintain safety and soundness is reflected in risk management strategy and risk-aware culture."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.OC-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management strategies identify and communicate the organization's role within the financial services sector as a component of critical infrastructure."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.OC-02.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management strategies identify and communicate the organization's role as it relates to other critical infrastructure sectors outside of the financial services sector and the interdependency risks."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.OC-03.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization's technology and cybersecurity strategy, framework, and policies align with legal, statutory, contractual, and regulatory obligations with unambiguously assigned compliance responsibilities."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.OC-03.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization implements and maintains a documented policy or policies that address customer data privacy that is approved by a designated officer or the organization's appropriate governing body."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OC-04.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization maintains an inventory of key internal assets, business functions, and external dependencies that includes mappings to other assets, business functions, and information flows."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OC-04.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization documents the business processes that are critical for the delivery of services and the functioning of the organization, and the impacts to the business if those processes are degraded or not functioning."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GV.OC-04.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Resilience requirements to support the delivery of critical services are established for all operating states (e.g., under duress/attack, during recovery, and normal operations)."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OC-04.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "The organization prioritizes the resilience design, planning, testing, and monitoring of systems and other key internal and external dependencies according to their criticality to the supported business functions, enterprise mission, and to the financial services sector."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OC-05.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization identifies, assesses, and documents the key dependencies, interdependencies, and potential points of failure to support the delivery of critical services."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OC-05.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "The organization has prioritized its external dependencies according to their criticality to the supported enterprise mission, business functions, and to the financial services sector."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.OC-05.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization defines objectives (e.g., Recovery Time Objective, Maximum Tolerable Downtime, Impact Tolerance) for the resumption of critical operations in alignment with business imperatives, stakeholder obligations, and critical infrastructure dependencies."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.OC-05.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Recovery point objectives to support data integrity are consistent with the organization's recovery time objectives, information flow dependencies between systems, and business obligations."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management strategies and frameworks are approved by the governing authority and incorporated into the overall business strategy and enterprise risk management framework."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management strategies and frameworks are informed by applicable international, national, and financial services industry standards and guidelines."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization has established, and maintains, technology and cybersecurity programs designed to protect the confidentiality, integrity and availability of its information and operational systems, commensurate with the organization's risk appetite and business needs."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "GV.RM-01.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Technology and cybersecurity risk management programs incorporate risk identification, measurement, monitoring, and reporting."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-01.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization's technology, cybersecurity, resilience, and third-party risk management programs, policies, resources, and priorities are aligned and mutually supporting."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RM-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority endorses and regularly reviews technology and cybersecurity risk appetite and is regularly informed about the status of, and material changes to, the organization's inherent risk profile."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization has established statements of technology and cybersecurity risk tolerance consistent with its risk appetite, and has integrated them into technology, cybersecurity, operational, and enterprise risk management practices."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-02.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Determination of the organization's risk appetite and tolerance includes consideration of the organization's stakeholder obligations, role in critical infrastructure, and sector-specific risk analysis."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-03.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management frameworks and programs are integrated into the enterprise risk management framework."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-03.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization's business continuity and resilience strategy and program align with and support the overall enterprise risk management framework."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.RM-03.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management and risk assessment processes are consistent with the organization's enterprise risk management policies, procedures, and methodologies and include criteria for the evaluation and categorization of enterprise-specific risks and threats."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "GV.RM-03.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record",
+            "Communication Artifact"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Technology and cybersecurity risk management considerations are integrated into daily operations, cultural norms, management discussions, and management decision-making."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RM-04.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority and senior management provide guidance, direction, and credible challenge in the design and implementation of risk management strategies, assessment of identified risks against risk appetite and risk tolerance, and in the selection of risk treatment approaches."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.RM-05.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization has a process for monitoring its technology, cybersecurity, and third-party risks, including escalating those risks that exceed risk appetite to management and identifying risks with the potential to impact multiple operating units."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-05.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization establishes minimum requirements for its third-parties that include how the organizations will communicate and coordinate in times of emergency."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GV.RM-06.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management and risk assessment processes and methodologies are documented and regularly reviewed and updated to address changes in the risk profile and risk appetite, the evolving threat environment, and new technologies, products, services, and interdependencies."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-07.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization has mechanisms in place to ensure that strategies, initiatives, opportunities, and emerging technologies are evaluated both in terms of risks and uncertainties that are potentially detrimental to the organization, as well as potentially advantageous to the organization (i.e., positive risks)."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.RM-08.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Technology and cybersecurity risk management frameworks are applied to, and are adapted as needed by, the organization's innovations in technology use and adoption of emerging technologies."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Technology and cybersecurity risk management frameworks are applied to all technology projects and procurements to ensure that security requirements are addressed consistently from project onset."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization defines, maintains, and uses technical security standards, architectures, processes or practices to ensure the security of its applications and infrastructure."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization integrates the use of technology architecture in its governance processes to support consistent approaches to security and technology design, integration of third party services, consideration and adoption of new technologies, and investment and procurement decisioning."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The technology architecture and associated management processes should be comprehensive and designed to achieve security and resilience commensurate with business needs."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.06",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology programs and projects are formally governed and stakeholder engagement is managed to facilitate effective communication, awareness, credible challenge, and decision-making."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RM-08.07",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology projects follow an established project management methodology to manage delivery and delivery risks, produce consistent quality, and achieve business objectives and value."
+        },
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GV.RM-09.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization has an enterprise-wide resilience strategy and program, including architecture, cyber resilience, business continuity, disaster recovery, and incident response, which support its mission, stakeholder obligations, critical infrastructure role, and risk appetite."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GV.RM-09.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The resilience program ensures that the organization can continue operating critical business functions and deliver services to stakeholders, to include critical infrastructure partners, during adverse incidents and cyber attacks."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority oversees and holds senior management accountable for implementing the organization's technology and cybersecurity risk management strategies and frameworks."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority regularly reviews, oversees, and holds senior management accountable for implementing the organization's third-party risk management strategy and program."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority regularly reviews, oversees, and holds senior management accountable for implementing the organization's resilience strategy and program."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-01.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization has designated a qualified Cybersecurity Officer (e.g., CISO) who is responsible and accountable for developing a cybersecurity strategy, overseeing and implementing its cybersecurity program, and enforcing its cybersecurity policy."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-01.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization designates a qualified Technology Officer (e.g., CIO or CTO) who is responsible and accountable for developing technology strategy, overseeing and implementing its technology program, and enforcing its technology policy."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The roles, responsibilities, qualifications, and skill requirements for personnel that implement, manage, and oversee the technology, cybersecurity, and resilience programs are defined, aligned, coordinated, and holistically managed."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization has established and assigned roles and responsibilities for systematic cybersecurity threat identification, monitoring, detection, and event reporting processes."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Resilience program roles and responsibilities are assigned to management across the organization to ensure risk assessment, planning, testing, and execution coverage for all critical business functions."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Roles and responsibilities for the Third-Party Risk Management Program and for each third-party engagement are defined and assigned."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Personnel who fulfill the organization's physical security and cybersecurity objectives understand their roles and responsibilities."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.06",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Roles and responsibilities for the inventory, ownership, and custodianship of applications, data and other technology assets are established and maintained."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-02.07",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management frameworks provide for segregation of duties between policy development, implementation, and oversight."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-03.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization's budgeting and resourcing processes identify, prioritize, and address resource needs to manage identified technology and cybersecurity risks."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-03.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization regularly assesses its skill and resource level requirements against its current personnel complement to determine gaps in resource need."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.RR-03.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization provides adequate resources, appropriate authority, and access to the governing authority for the designated Cybersecurity Officer (e.g., CISO)."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-04.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization conducts background/screening checks on all personnel upon hire/retention, at regular intervals throughout employment, and upon a change in role commensurate with their access to critical data and systems."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.RR-04.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization establishes processes and controls to mitigate cyber risks related to employment termination, as permitted by law, to include the return or disposition of all organizational assets."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.RR-04.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization integrates insider threat considerations into its human resource, risk management, and control programs to address the potential for malicious or unintentional harm by trusted employees or third parties."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity policies are documented, maintained and approved by the governing authority or a designated executive."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The accountable governing body, and applicable cybersecurity program and policies, for any given organizational unit, affiliate, or merged entity are clearly established, applied, and communicated."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "GV.PO-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization's incentive programs are consistent with cyber risk management objectives, and technology and cybersecurity policies integrate with an employee accountability policy."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "All personnel consent to policies addressing acceptable technology use, social media use, personal device use, confidentiality, and/or other security-related policies and agreements."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity processes, procedures, and controls are established in alignment with cybersecurity policy."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.06",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Physical and environmental security policies are implemented and managed."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.07",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization maintains documented business continuity and resilience program policies and procedures approved by the governing authority."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.PO-01.08",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization maintains documented third-party risk management program policies and procedures approved by the governing authority."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GV.PO-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Board Minutes"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The cybersecurity policy is regularly reviewed, revised, and communicated under the leadership of a designated Cybersecurity Officer to address changes in the risk profile and risk appetite, the evolving threat environment, and new technologies."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.OV-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The governing authority regularly reviews and evaluates the organization's ability to manage its technology, cybersecurity, third-party, and resilience risks."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.OV-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Quarterly",
+          "notes": "The designated Cybersecurity Officer periodically reports to the appropriate governing authority on the status of cybersecurity within the organization."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GV.OV-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Quarterly",
+          "notes": "The designated Technology Officer regularly reports to the governing authority on the status of technology use and risks within the organization."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "GV.OV-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization regularly assesses its inherent technology and cybersecurity risks and ensures that changes to the business and threat environment lead to updates to the organization's strategies, programs, risk appetite and risk tolerance."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GV.OV-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "The organization determines and articulates how it intends to maintain an acceptable level of residual technology and cybersecurity risk as set by the governing authority."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "GV.OV-03.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "The organization develops, implements, and reports to management and the governing body key technology and cybersecurity risk and performance indicators and metrics."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "GV.OV-03.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Resilience program performance is measured and regularly reported to senior executives and the governing authority."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "PR.AT-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "All personnel receive cybersecurity awareness training upon hire and on a regular basis."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "PR.AT-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Cybersecurity awareness training includes awareness of and competencies for data protection, personal data handling, compliance obligations, working with third parties, detecting cyber risks, and incident reporting."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "PR.AT-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Cybersecurity awareness training is updated regularly to reflect risks and threats identified by the organization, security policies and standards, applicable laws and regulations, and changes in individual responsibilities."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "PR.AT-01.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "As new technology is deployed or undergoes change that requires changes in practices, all impacted personnel are trained on the new system and any accompanying technology and cybersecurity risks."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "PR.AT-02.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Mechanisms are in place to ensure that personnel working with cybersecurity and technology maintain current knowledge and skills related to changing threats, countermeasures, new tools, best practices, and job responsibilities."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "PR.AT-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "High-risk groups, such as those with elevated privileges or in sensitive business functions, receive cybersecurity situational awareness training for their roles and responsibilities."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "PR.AT-02.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "All personnel are made aware of and are trained for their role and operational steps in response and recovery plans."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "PR.AT-02.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization maintains and enhances the skills and knowledge of in-house staff performing incident management and forensic investigation activities."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "PR.AT-02.05",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "All third party staff receive cybersecurity awareness and job training sufficient for them to perform their duties and maintain organizational security."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "PR.AT-02.06",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "The organization has established and maintains a cybersecurity awareness program through which customers are kept aware of new threats and vulnerabilities, basic cybersecurity hygiene practices, and their role in cybersecurity."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "PR.AT-02.07",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Board Minutes"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization's governing body and senior management receive cybersecurity situational awareness training to evaluate and manage cyber risks, promote culture, and lead by example."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "PR.AT-02.08",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Where the governing authority does not have adequate cybersecurity expertise, they have direct access to the senior officer responsible for cybersecurity and independent sources of expertise."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "ID.IM-01.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "The organization implements a regular process to collect, store, report, benchmark, and assess trends in actionable performance indicators and risk metrics."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "ID.IM-01.03",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "The organization establishes specific objectives, performance criteria, benchmarks, and tolerance limits to identify areas that have improved or are in need of improvement over time."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "ID.IM-01.04",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Technology and cybersecurity programs include elements designed to assess, manage, and continually improve the quality of program delivery in addressing stakeholder requirements and risk reduction."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "ID.RA-01.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The organization identifies, assesses, and documents risks and potential vulnerabilities associated with assets, to include workforce, data, technology, facilities, services, and connections."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "ID.RA-06.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Technology and cybersecurity risk management programs and risk assessment processes produce actionable recommendations that the organization uses to select, design, prioritize, implement, maintain, evaluate, and modify cybersecurity and technology controls."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "RS.CO-02.01, RS.CO-02.02",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Incident Report",
+            "Communication Artifact"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Incident response program includes defined escalation protocols and notification procedures for impacted stakeholders including government bodies and supervisory agencies."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "DE.AE-02.01, DE.AE-04.01",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "The organization performs timely collection and analysis of event data and has documented processes to analyze and triage incidents to assess root cause, technical impact, and business impact."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "ID.IM-03.01, ID.IM-03.02",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Formal processes improve protection controls and monitoring/detection processes by integrating recommendations, findings, and lessons learned from exercises, testing, audits, assessments, and incidents."
+        }
+      ]
+    },
+    "owasp-asi-2026": {
+      "name": "OWASP Top 10 for Agentic Applications 2026",
+      "version": "2026",
+      "description": "Mapping of SEAT outcomes to the OWASP Top 10 for Agentic Applications (ASI) 2026 risk categories, extending security awareness program maturity to the oversight, identity, and governance of AI agents.",
+      "officialLink": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "ASI01:2026 - Agent Goal Hijack, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Program strategy defines the approved objectives, autonomy boundaries, and guardrails for deployed agents, reducing the room for goal hijack and behavioral drift that produces rogue agents."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "ASI03:2026 - Agent Identity & Privilege Abuse, ASI04:2026 - Agentic Supply Chain Compromise",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Documented policy for agent identity, permission scoping, and approved tools and registries establishes the control baseline that limits privilege abuse and dynamic supply chain compromise."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "ASI08:2026 - Cascading Agent Failures, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Leadership commitment funds the human-oversight checkpoints, segmentation, and emergency-shutdown mandates that contain cascading failures and rogue autonomous behavior."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "ASI06:2026 - Memory & Context Poisoning, ASI08:2026 - Cascading Agent Failures",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "A continuous-improvement loop drives periodic memory integrity audits and post-incident hardening so that poisoned context and propagating failures are caught and designed out over time."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "Role-targeted communication directly counters automation bias and authority misrepresentation by teaching staff when not to trust an agent's confident but unverified output."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Feedback Survey"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Messaging that resonates across roles and contexts makes the warning against over-reliance on agents land, reducing uncritical acceptance of misleading agent explanations."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "ASI01:2026 - Agent Goal Hijack, ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "A workforce that actively reports anomalous or off-objective agent behavior provides early human detection of goal hijack and trust exploitation that automated monitoring can miss."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "ASI02:2026 - Tool Misuse & Exploitation, ASI08:2026 - Cascading Agent Failures",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Responsive feedback channels surface tool-misuse patterns and early failure signals so they can be contained before they cascade through connected tools and agents."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "ASI02:2026 - Tool Misuse & Exploitation, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Continuous measurement of agent tool usage and goal alignment is the detection layer for unsafe tool composition and gradual goal drift toward rogue behavior."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "ASI01:2026 - Agent Goal Hijack, ASI03:2026 - Agent Identity & Privilege Abuse",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Risk-driven triage by blast radius decides which agents (those with the most privilege and the widest goal scope) receive the deepest adversarial testing for hijack and privilege abuse."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "ASI09:2026 - Human-Agent Trust Exploitation, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Measuring whether people critically evaluate agent recommendations, via adversarial simulations, quantifies real resistance to trust exploitation rather than assumed vigilance."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "ASI06:2026 - Memory & Context Poisoning, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Repeated behavioral assessment over time detects gradual goal drift and the downstream effects of memory poisoning that a point-in-time check would miss."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "ASI01:2026 - Agent Goal Hijack, ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Role-specific training on prompt and instruction injection and on agent over-reliance equips the people who build and supervise agents to recognize hijack attempts and resist trust exploitation."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "ASI02:2026 - Tool Misuse & Exploitation, ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Hands-on, scenario-based methods (live adversarial exercises against real agents) teach recognition of tool misuse and misleading agent explanations far better than static content."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "ASI09:2026 - Human-Agent Trust Exploitation",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Making agent-literacy training understandable to all personnel, not just builders, broadens the base of users who can spot automation bias and unwarranted agent confidence."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "ASI04:2026 - Agentic Supply Chain Compromise, ASI07:2026 - Insecure Inter-Agent Communication",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Flexible, rapidly updatable delivery keeps guidance current with fast-moving agent threats such as compromised tool registries and spoofed inter-agent messages."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "ASI03:2026 - Agent Identity & Privilege Abuse, ASI10:2026 - Rogue Agents",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Embedding agent identity hygiene and autonomy-boundary expectations from onboarding onward builds durable habits that limit privilege abuse and runaway autonomy across the agent lifecycle."
+        }
+      ]
+    },
+    "eu-ai-act": {
+      "name": "EU AI Act",
+      "version": "2024/1689 (Digital Omnibus, June 2026)",
+      "description": "Mapping of SEAT outcomes to EU AI Act obligations for providers and deployers, centered on the Article 4 AI literacy duty as amended by the Digital Omnibus on AI (June 2026).",
+      "officialLink": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Art. 4 measures must account for the context in which AI systems are used and the persons they are used on. An AI literacy program disconnected from how the organization actually deploys AI does not satisfy the duty. Program strategy should inventory AI use cases and align literacy measures to them."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The Omnibus reframed Art. 4 from an outcome guarantee to demonstrable measures. That makes documentation the compliance artifact: what measures were taken, for whom, on what basis, reviewed when. An undocumented literacy effort is legally indistinguishable from no effort."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "Art. 4 applies to staff and other persons dealing with the operation and use of AI systems on the organization's behalf, which includes decision-makers who approve AI deployments. Management that mandates AI adoption without understanding its failure modes undermines the duty."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Art. 4, Art. 50",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "AI systems, use cases, and obligations change faster than annual training cycles. Art. 50 transparency obligations apply from 2 August 2026 with watermarking for already-marketed systems grace-perioded to 2 December 2026; literacy measures need a review loop that tracks these dates and new deployments."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "Art. 4 explicitly requires measures to take into account technical knowledge, experience, education and training of staff, and the context of use. A single generic AI awareness module for the whole workforce fails this on its face. Persona-targeted delivery is written into the article."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Art. 4, Art. 50",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Shadow AI use is the practical failure mode of AI literacy. A program where employees disclose AI use and report AI-related concerns produces the behavioral evidence that literacy measures are working; a program where AI use stays hidden produces none."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Art. 4 does not mandate effectiveness measurement the way NIS2 Art. 21(2)(f) does; completion of a literacy course can technically count as a measure. But \"appropriate\" measures invite the question of appropriateness, and measured programs are far easier to defend to a market surveillance authority than certificate binders."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Appropriate measures scale with the risk of the AI systems in use. Literacy measures for staff operating consequential systems should be deeper than for casual chatbot users. A risk-tiered training map is the natural evidence that proportionality was considered."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "The core of the duty. AI literacy training tailored to role, prior knowledge, and the specific systems in use, covering both operating AI competently and recognizing its risks (hallucination, over-reliance, data leakage, deepfakes). Generic AI 101 content for everyone is the compliance-theater version."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Art. 4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Training Record",
+            "Metric Report"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Art. 4 covers staff and other persons operating or using AI systems on the organization's behalf, which reaches contractors and third parties, not just employees. Coverage reporting across the full population in scope is the evidence."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Art. 4, Art. 26",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Curriculum Document",
+            "Other"
+          ],
+          "weight": 3,
+          "cadence": "Onboarding",
+          "notes": "Literacy needs change when a person's AI exposure changes: onboarding, new tool rollouts, role changes into AI-operating positions. Art. 26 human oversight competence requirements for high-risk deployers (deferred to Dec 2027 / Aug 2028) will raise the bar for specific roles; building the lifecycle now avoids retrofitting later."
+        }
+      ]
+    },
+    "nist-ai-rmf": {
+      "name": "NIST AI Risk Management Framework (AI RMF 1.0)",
+      "version": "1.0",
+      "description": "Mapping of SEAT outcomes to the NIST AI RMF 1.0 GOVERN, MAP, MEASURE, and MANAGE subcategories, with Generative AI Profile (NIST-AI-600-1) context where it sharpens the mapping. Extends security awareness program maturity to organizational AI risk governance and workforce AI literacy.",
+      "officialLink": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "GOVERN 1.1, GOVERN 1.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "GOVERN 1.1 asks whether legal and regulatory requirements around AI are understood and managed; GOVERN 1.2 asks whether trustworthy-AI characteristics are written into organizational policy. A program strategy that names the AI risks the business actually carries, rather than reciting generic awareness goals, is the working evidence for both."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "GOVERN 1.2, GOVERN 2.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "GOVERN 2.1 wants roles, responsibilities, and lines of communication for AI risk documented. If nobody can point to the page that says who owns AI acceptable use, who approves new tools, and who trains the workforce, the function is not implemented no matter how good the intentions are."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "GOVERN 2.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "GOVERN 2.3 places responsibility for AI risk decisions with executive leadership. Board minutes showing leadership reviewed AI risk posture, and funded the program that manages the human side of it, are exactly the artifact an assessor asks for first."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "GOVERN 1.5, MANAGE 4.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "GOVERN 1.5 requires ongoing monitoring and periodic review of the risk management process itself; MANAGE 4.2 folds measurable improvement into system updates. A program that revises its AI guidance on a schedule, and after incidents, is doing both. One that shipped a policy in 2024 and has not touched it since is doing neither."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "GOVERN 4.1; NIST-AI-600-1 GOVERN 4.1 actions",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "GOVERN 4.1 asks for organizational practices that foster critical thinking and a safety-first mindset. The GAI Profile sharpens this around the human-AI configuration risk: people over-trusting confident model output. Role-targeted communication teaching staff when to verify AI output is the direct countermeasure. GAI Profile reference is at the subcategory level, not a specific action ID."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "GOVERN 4.1, MAP 5.2",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Feedback Survey"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "MAP 5.2 covers practices and personnel for regular engagement with the people the AI actually affects. Messaging about AI risk that lands with a claims adjuster and a data scientist alike, rather than one generic memo, is what makes the safety-first culture GOVERN 4.1 describes real rather than aspirational."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "GOVERN 4.3, MANAGE 4.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "GOVERN 4.3 asks for practices that enable AI incident identification and information sharing; MANAGE 4.3 requires incidents and errors to be communicated to the people affected. A workforce that reports odd model behavior, suspected shadow AI, or a deepfake voicemail without fear is the incident-reporting culture both subcategories assume exists."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "MEASURE 3.3, MANAGE 4.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "MEASURE 3.3 requires feedback processes so end users can report problems; MANAGE 4.1 requires post-deployment monitoring that captures and evaluates user input. If employees flag AI problems and nothing visibly changes, the feedback channel exists on paper and the reports stop coming. Closing the loop is the control."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "MEASURE 2.13",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Quarterly",
+          "notes": "MEASURE 2.13 evaluates whether the measurement processes themselves are effective. Read plainly, MEASURE is an effectiveness mandate: it asks whether your controls demonstrably work, not whether they exist. It is the AI-governance analogue of NIS2 Art. 21(2)(f), and completion rates do not answer it. Maturity scoring over time does."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "MAP 5.1, MEASURE 1.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "MAP 5.1 characterizes likely impacts; MEASURE 1.1 selects metrics for the most significant risks identified in MAP. Assessment effort should follow the risk: the teams wiring AI into payment flows and customer data deserve deeper scrutiny than the ones drafting marketing copy with it."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "MEASURE 2.5; NIST-AI-600-1 MEASURE 2.5 actions",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "MEASURE 2.5 demonstrates validity and reliability in deployment conditions. The GAI Profile names confabulation as a headline risk here: models asserting false things fluently. Whether people actually catch and question plausible-but-wrong AI output, measured through realistic exercises rather than assumed, is the human half of that validity question. GAI Profile reference is at the subcategory level, not a specific action ID."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact-assessment",
+          "frameworkRef": "MEASURE 4.2; NIST-AI-600-1 MEASURE 4.2 actions",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "MEASURE 4.2 tracks trustworthiness in the deployment context using input from domain experts and AI actors over time. The GAI Profile frames the information integrity risk this serves: repeated behavioral measurement shows whether the workforce is getting better or worse at spotting synthetic and manipulated content, which a point-in-time check cannot. GAI Profile reference is at the subcategory level, not a specific action ID."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "GOVERN 2.2, MAP 3.4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "GOVERN 2.2 is where workforce AI literacy lives in the framework: personnel and partners receive AI risk management training. MAP 3.4 adds operator and practitioner proficiency requirements. Together they mandate training scoped to what each role actually does with AI, not one generic module for everyone."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "GOVERN 2.2, MEASURE 2.13",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "GOVERN 2.2 training only counts if it changes what people do, and MEASURE 2.13 obligates you to check. Hands-on methods, like exercises against real model output and deepfake samples, teach recognition in a way slideware does not, and they generate the effectiveness evidence MEASURE asks for as a byproduct."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "GOVERN 2.2, GOVERN 3.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "GOVERN 3.1 values diverse perspectives in AI risk decisions, and GOVERN 2.2 does not scope literacy to the engineering org. AI risk shows up wherever AI is used, which is now everywhere, so literacy material has to be understandable to the whole workforce, not just the people who ship models."
+        },
+        {
+          "seatOutcomeId": "flexible-effective-delivery",
+          "frameworkRef": "GOVERN 2.2, MANAGE 4.1",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "AI risks move faster than annual training cycles; MANAGE 4.1 post-deployment monitoring will keep surfacing new failure modes. Delivery that can push updated guidance within days of a new threat pattern, a jailbreak technique or a fresh deepfake scam, keeps GOVERN 2.2 literacy current instead of historical."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "GOVERN 2.2, MANAGE 2.4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "MANAGE 2.4 requires mechanisms to supersede, disengage, or deactivate AI systems behaving outside intent. That human-oversight mechanism only works if the people near the system know it exists and when to pull it. Embedding AI oversight expectations from onboarding onward, and refreshing them at role changes, makes the kill switch a practiced habit rather than a document."
+        }
+      ]
+    },
+    "iso-42001": {
+      "name": "ISO/IEC 42001:2023",
+      "version": "2023",
+      "description": "Mapping of SEAT outcomes to ISO/IEC 42001 AI management system clauses, centered on the competence, awareness, leadership, and performance-evaluation requirements that a security awareness program provides audit evidence for.",
+      "officialLink": "https://www.iso.org/standard/42001",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "Clause 4.1, 4.2, 5.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Clause 5.2 requires an AI policy aligned to the organization context (4.1) and interested-party needs (4.2). A program strategy that ties workforce AI literacy to the organization's actual AI use cases is what makes that policy operational rather than a framed statement on the wall."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "Clause 5.2, Annex A.2, Annex A.3",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Annex A.2 (policies related to AI) and A.3 (internal organization, roles and responsibilities) require documented ownership. If nobody can produce the page naming who owns AI acceptable use and workforce training, the AIMS fails the documentation test an auditor applies first."
+        },
+        {
+          "seatOutcomeId": "executive-support",
+          "frameworkRef": "Clause 5.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Board Minutes",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Clause 5.1 makes top management demonstrate leadership and commitment to the AIMS, including resourcing it. Evidence that leadership reviewed AI risk and funded the program is a direct certification artifact, not a nice-to-have."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "Clause 9.3, 10.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Clause 10.1 requires continual improvement of the AIMS and 9.3 requires management review to drive it. A program that revises its AI guidance on a cadence and after incidents produces the improvement record surveillance audits look for."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "Clause 7.3, 7.4",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Clause 7.4 requires determining internal communications relevant to the AIMS and 7.3 requires awareness of the AI policy and each person's contribution. Role-targeted communication is how both are met for a workforce rather than a single all-staff memo."
+        },
+        {
+          "seatOutcomeId": "cultural-relevance",
+          "frameworkRef": "Clause 7.3",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Feedback Survey"
+          ],
+          "weight": 2,
+          "cadence": "Continuous",
+          "notes": "Clause 7.3 awareness is only real when people understand why the AI policy matters to their work. Messaging that resonates across roles is what turns required awareness into a culture that actually questions AI output."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "Clause 10.2, Annex A.9",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Annex A.9 (responsible use of AI systems) and clause 10.2 (nonconformity and corrective action) depend on people surfacing problems. A workforce that reports misuse or unexpected AI behavior feeds the nonconformity process the standard requires."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "Clause 10.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "Clause 10.2 requires reacting to nonconformities and correcting them. If staff report AI problems and nothing changes, the corrective-action loop is not operating and the finding writes itself."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "Clause 9.1",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Continuous",
+          "notes": "Clause 9.1 requires the organization to determine what to monitor and measure about the AIMS and to evaluate its performance and effectiveness. SEAT maturity measurement over time is the effectiveness evidence for the workforce controls, which is what a certification auditor asks to see."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "Clause 6.1, Annex A.5",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Clause 6.1 requires an AI risk assessment and treatment process, and Annex A.5 requires AI system impact assessments. Program effort should follow that risk picture, concentrating on the AI uses with the highest impact rather than treating every use the same."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "Clause 7.2",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Clause 7.2 requires that people doing work affecting AIMS performance are competent and that the organization retains evidence of competence. Role-appropriate training is the mechanism, and training records are the retained evidence."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "Clause 7.2",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Clause 7.2 asks the organization to take actions to acquire competence and to evaluate the effectiveness of those actions. Methods that demonstrably change behavior, not just record attendance, are what satisfy the effectiveness half of that clause."
+        },
+        {
+          "seatOutcomeId": "accessible-inclusive-training",
+          "frameworkRef": "Clause 7.3",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Clause 7.3 awareness applies to persons doing work under the organization's control, which includes contractors and staff outside the AI team. Training that reaches everyone in scope is what keeps the awareness control from having gaps an auditor can sample into."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "Clause 7.2, Annex A.4",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Annex A.4 (resources for AI systems, including competence) and clause 7.2 expect competence to be maintained across the lifecycle. Embedding AI competence from onboarding and refreshing it on role change keeps the control current rather than a one-time event."
+        }
+      ]
+    },
+    "owasp-llm": {
+      "name": "OWASP Top 10 for LLM Applications 2025",
+      "version": "2025",
+      "description": "Mapping of SEAT outcomes to the OWASP Top 10 for LLM Applications (2025) risk categories, extending security awareness to the people who build and operate LLM-powered features.",
+      "officialLink": "https://genai.owasp.org/llm-top-10/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "LLM06: Excessive Agency",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "LLM06 is about giving an LLM feature more autonomy, permissions, or tools than its function needs. Program strategy defines what LLM features are allowed to do and where a human stays in the loop, which is the governance boundary that keeps agency in check."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "LLM03: Supply Chain, LLM06: Excessive Agency",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Annual",
+          "notes": "Documented policy on approved models, plugins, and the permission scope of LLM features is the baseline that limits supply-chain exposure (LLM03) and unchecked agency (LLM06). Without it there is no standard to test a new LLM feature against."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "LLM04: Data and Model Poisoning, LLM09: Misinformation",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "LLM threats move fast. A continuous-improvement loop that folds new poisoning and misinformation patterns into guidance and tests is what keeps LLM defenses from ossifying around last year's attack set."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "LLM01: Prompt Injection, LLM02: Sensitive Information Disclosure",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "Role-targeted communication teaches builders to treat all model input as untrusted (LLM01) and teaches every user not to paste secrets or regulated data into prompts (LLM02). These are behaviors, and behavior is changed by relevant messaging, not a generic banner."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "LLM01: Prompt Injection, LLM07: System Prompt Leakage",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "Continuous",
+          "notes": "A workforce that reports odd LLM behavior, suspected injection, or a leaked system prompt gives early human detection of attacks that pass automated filters. Participation turns users into a sensor layer for LLM01 and LLM07."
+        },
+        {
+          "seatOutcomeId": "feedback-responsiveness",
+          "frameworkRef": "LLM05: Improper Output Handling",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Feedback Survey",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "As Needed",
+          "notes": "LLM05 covers treating model output as trusted downstream. Responsive feedback channels surface where output is being consumed unsafely so it can be fixed before it reaches a browser, shell, or database."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "LLM01: Prompt Injection, LLM06: Excessive Agency",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "Measuring how the organization's LLM features hold up against injection attempts and how well they stay within their intended agency is the detection layer for LLM01 and LLM06. Point-in-time review misses drift as features gain new tools."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "LLM06: Excessive Agency, LLM01: Prompt Injection",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Policy Document"
+          ],
+          "weight": 5,
+          "cadence": "Semi-Annual",
+          "notes": "Risk-driven testing sends the deepest adversarial effort at the LLM features with the widest agency and the most sensitive reach, where a successful injection does the most damage. Blast radius, not feature count, sets the priority."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "LLM09: Misinformation",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 4,
+          "cadence": "Quarterly",
+          "notes": "LLM09 is amplified by users who accept confident but wrong output. Measuring whether people actually verify LLM answers, through realistic scenarios, quantifies real resistance to misinformation rather than assumed skepticism."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "LLM01: Prompt Injection, LLM02: Sensitive Information Disclosure",
+          "assuranceLevel": "Required",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record",
+            "Assessment Report"
+          ],
+          "weight": 5,
+          "cadence": "Annual",
+          "notes": "Developers who build LLM features need training on injection defense and on keeping secrets and regulated data out of prompts and logs. General staff need the lighter version. Tailoring the depth to the role is what makes the training land."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "LLM01: Prompt Injection, LLM05: Improper Output Handling",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results",
+            "Feedback Survey"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "Hands-on exercises where people try to break a real LLM feature teach recognition of injection and unsafe output handling far better than slides. The skill is pattern recognition, and pattern recognition is built by doing."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "LLM02: Sensitive Information Disclosure, LLM06: Excessive Agency",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 4,
+          "cadence": "Onboarding",
+          "notes": "Embedding LLM secure-use habits from developer onboarding, and refreshing them when someone starts building agentic features, builds durable defaults against disclosure and over-permissioning rather than relying on a one-time course."
+        }
+      ]
+    },
+    "mitre-atlas": {
+      "name": "MITRE ATLAS",
+      "version": "living",
+      "description": "Mapping of SEAT outcomes to MITRE ATLAS, using its adversary tactics, techniques, and case studies as the threat model that grounds AI-focused awareness training, assessment, and red-team exercises.",
+      "officialLink": "https://atlas.mitre.org/",
+      "mappings": [
+        {
+          "seatOutcomeId": "strategic-alignment",
+          "frameworkRef": "ATLAS threat model (all tactics)",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "ATLAS gives program strategy a real adversary model for AI systems. Prioritizing awareness and controls around the tactics actually seen against ML systems, rather than hypothetical fears, is what keeps the strategy grounded in observed threat."
+        },
+        {
+          "seatOutcomeId": "governance-documentation",
+          "frameworkRef": "ATLAS: ML Supply Chain Compromise",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Policy Document",
+            "Assessment Report"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "Techniques like ML supply chain compromise and poisoning of public datasets or models argue for documented policy on vetted model and data sources. ATLAS supplies the concrete failure modes that policy needs to address."
+        },
+        {
+          "seatOutcomeId": "continuous-improvement",
+          "frameworkRef": "ATLAS case studies (living)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "ATLAS is updated as new techniques and case studies are documented. A continuous-improvement loop that refreshes training scenarios and test cases against the latest ATLAS entries keeps the program current with a moving threat landscape."
+        },
+        {
+          "seatOutcomeId": "targeted-communication",
+          "frameworkRef": "ATLAS: Data Poisoning, Model Evasion",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Communication Artifact",
+            "Training Record",
+            "Curriculum Document"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Translating ATLAS techniques such as training-data poisoning and model evasion into role-relevant language, especially for the ML and data teams who can spot them, is what turns an abstract threat catalog into awareness that changes behavior."
+        },
+        {
+          "seatOutcomeId": "active-participation",
+          "frameworkRef": "ATLAS: Reconnaissance, LLM Prompt Injection",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Incident Report",
+            "Feedback Survey"
+          ],
+          "weight": 3,
+          "cadence": "Continuous",
+          "notes": "Many ATLAS tactics begin with reconnaissance or probing of a deployed model. Staff who recognize and report those early signs, including prompt-injection attempts, give human detection ahead of impact."
+        },
+        {
+          "seatOutcomeId": "performance-measurement",
+          "frameworkRef": "ATLAS tactics (detection coverage)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Metric Report",
+            "Assessment Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Measuring how well the organization detects and responds to ATLAS-mapped techniques turns the knowledge base into a coverage metric, showing which adversary behaviors against AI systems the program can actually catch."
+        },
+        {
+          "seatOutcomeId": "risk-driven-assessment",
+          "frameworkRef": "ATLAS: ML Attack Staging, Model Evasion",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Assessment Report",
+            "Simulation Results"
+          ],
+          "weight": 4,
+          "cadence": "Semi-Annual",
+          "notes": "ATLAS gives red teams a structured technique set to exercise AI systems against. Prioritizing that testing by exposure, the models with the widest reach and most sensitive data, is risk-driven assessment with a concrete adversary playbook."
+        },
+        {
+          "seatOutcomeId": "behavioral-impact",
+          "frameworkRef": "ATLAS case studies",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Simulation Results",
+            "Incident Report"
+          ],
+          "weight": 3,
+          "cadence": "Quarterly",
+          "notes": "Simulations built from documented ATLAS case studies, such as evasion or prompt injection against a real system, measure whether people respond correctly to an actual attack pattern rather than a contrived one."
+        },
+        {
+          "seatOutcomeId": "relevant-tailored-training",
+          "frameworkRef": "ATLAS techniques (by role)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Curriculum Document",
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Annual",
+          "notes": "ATLAS is written for security engineers and ML teams more than general staff. Training that maps its techniques to the people who build and defend models, rather than pushing red-team detail to everyone, is what makes it useful."
+        },
+        {
+          "seatOutcomeId": "effective-learning-methods",
+          "frameworkRef": "ATLAS case studies (scenario fuel)",
+          "assuranceLevel": "Expected",
+          "evidenceTypes": [
+            "Training Record",
+            "Simulation Results"
+          ],
+          "weight": 4,
+          "cadence": "As Needed",
+          "notes": "The documented ATLAS case studies are ready-made, realistic scenarios. Using them as the basis for hands-on exercises teaches recognition of real AI attacks far better than abstract description."
+        },
+        {
+          "seatOutcomeId": "integrated-training-lifecycle",
+          "frameworkRef": "ATLAS threat model (ML roles)",
+          "assuranceLevel": "Recommended",
+          "evidenceTypes": [
+            "Training Record"
+          ],
+          "weight": 3,
+          "cadence": "Onboarding",
+          "notes": "Embedding AI adversary awareness from onboarding for ML and data-engineering roles, using the ATLAS model, builds threat literacy into the people who ship models rather than bolting it on after an incident."
+        }
+      ]
+    }
+  }
+}

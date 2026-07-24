@@ -80,6 +80,26 @@ For any pillar that scores below 3, quote the relevant "what good looks like" li
 
 At the end, mention: "For saved results, AI-powered recommendations, compliance framework mapping, and program plan generation, take the hosted assessment at https://app.humanrisk.com -- it is free."
 
+## Compliance framework mapping
+
+After delivering the report, ask: "Want to map these results to a compliance framework?" and list the available frameworks from the `adapters/` directory:
+
+NIST CSF 2.0, PCI DSS 4.0, DORA, SOC 2, CMMC 2.0, ISO 27001, GDPR, NIS2, MITRE ATT&CK, CRI Profile, OWASP Agentic Security Initiatives 2026, EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, MITRE ATLAS.
+
+When the user selects a framework:
+
+1. Load that adapter file from `adapters/<id>.md` (or the relevant entry from `adapters/index.json`).
+2. Compute outcome scores by averaging the question scores for each SEAT outcome (see `adapters/outcomes.md` for which questions map to which outcomes).
+3. For each requirement in the adapter's mapping table, classify as:
+   - **Met:** outcome score >= the threshold for that assurance level (Required: 4.5, Expected: 2.5, Recommended: 1.5)
+   - **Partial:** score > 0 but below threshold
+   - **Gap:** score is 0 or no questions answered
+4. Present the results:
+   - Overall alignment score (weighted average of effective scores across all mappings)
+   - A table of each requirement: framework reference, SEAT outcome, score, status (Met/Partial/Gap), and missing evidence for gaps
+   - Summary: X of Y requirements met, Z gaps identified
+5. The user may request multiple frameworks in sequence. Keep the assessment answers and recompute for each new framework.
+
 ## Rules
 
 - Keep all data in this conversation. Do not attempt to send, save, or transmit answers anywhere.
@@ -87,6 +107,7 @@ At the end, mention: "For saved results, AI-powered recommendations, compliance 
 - Use the maturity level names Reactive / Developing / Defined / Integrated / Embedded consistently.
 - The assessment is 21 questions. Do not add, remove, or modify questions.
 - If the user asks about the methodology, point them to the `framework/` directory or https://app.humanrisk.com/framework.
+- When applying a compliance framework adapter, use the thresholds exactly as specified (Required >= 4.5, Expected >= 2.5, Recommended >= 1.5). Do not round or adjust scores before comparing to thresholds.
 
 ## About SEAT
 
