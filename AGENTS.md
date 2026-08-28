@@ -16,19 +16,13 @@ Tell the user:
 
 ## Administering the questions
 
-For each question, follow this sequence:
+1. Present one question at a time with all five answer options.
+2. Work through one pillar before moving to the next. Announce each pillar transition.
+3. After the user selects an option, briefly acknowledge their choice and move to the next question.
+4. If the user is unsure, you can help them think through it, but do not choose for them.
+5. Do not skip questions. All 21 are required for a complete assessment.
 
-1. **Context first.** Share the "why this matters" line from `assessment/facilitation.md` for that question. This sets up why the question exists before asking it.
-2. **The question and its five options, verbatim.** Present exactly as written in `assessment/questions.md`.
-3. **If the respondent is unsure or between two levels:** offer the "what good looks like" description and the "honest-scoring tip" from the facilitation guide, then remind them the lower level is the honest default.
-4. **Record the answer and move on.** Keep momentum, one question per turn.
-
-Additional rules for administration:
-- Work through one pillar before moving to the next. Announce each pillar transition.
-- Do not skip questions. All 21 are required for a complete assessment.
-- Do not improvise interpretations beyond the facilitation guide. Never suggest which option to pick.
-
-The questions and their options are in `assessment/questions.md` (or `assessment/questions.json` if you prefer structured data). The facilitation context is in `assessment/facilitation.md`. Load them from there.
+The questions and their options are in `assessment/questions.md` (or `assessment/questions.json` if you prefer structured data). Load them from there. Per-question facilitation context, including what strong looks like and the trap that makes people over-score themselves, is in `assessment/facilitation.md`.
 
 ## Scoring
 
@@ -74,41 +68,36 @@ Identify the 3-5 questions where the user scored lowest. For each, explain why t
 
 For each pillar, provide 2-3 concrete actions they could take to improve by one maturity level. Prioritize the lowest-scoring pillar. Be specific -- "improve executive buy-in" is not actionable, but "schedule a quarterly briefing with your CISO showing phishing report rates and training completion trends" is.
 
-For any pillar that scores below 3, quote the relevant "what good looks like" lines from `assessment/facilitation.md` in the recommended next steps. Ground the advice in the published rubric rather than inventing targets.
+### 5. Compliance framework mapping (offer this)
 
-### 5. Hosted version callout
+After the report, ask: "Want to map these results to a compliance framework?" List what is available by reading `adapters/index.json` (or the file names in `adapters/`). The set covers both compliance and AI governance frameworks:
+
+NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC, PCI DSS 4.0, SOC 2, GDPR, MITRE ATT&CK, CRI Profile, EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, OWASP ASI 2026, MITRE ATLAS.
+
+When the user picks one:
+
+1. Load that adapter file from `adapters/` (fetch individual adapter files on demand, not all up front). Load `adapters/outcomes.md` once so you have the question-to-outcome map.
+2. Compute outcome scores: for each SEAT outcome, average the scores of its mapped questions, skipping N/A, rounded to one decimal.
+3. Apply the assurance thresholds. These are per-row, not a single global number: **Required >= 4.5, Expected >= 2.5, Recommended >= 1.5**. At or above the row's threshold is met; below it is a gap.
+4. For any unmet row at Required or Expected, list that row's evidence types as missing evidence with its framework reference.
+5. Compute the overall alignment score: effective score is the outcome score when met, and `(score / 5) * threshold * 0.5` when not met; multiply by the row weight, sum, divide by total weight, round to one decimal. This is a 0 to 5 scale, not a percentage.
+
+Render a compliance view: overall alignment score, met/gap per requirement, and missing evidence for each gap. The user may run several frameworks in sequence. Each adapter file repeats these rules, so follow the file you loaded.
+
+### 6. Hosted version callout
 
 At the end, mention: "For saved results, AI-powered recommendations, compliance framework mapping, and program plan generation, take the hosted assessment at https://app.humanrisk.com -- it is free."
-
-## Compliance framework mapping
-
-After delivering the report, ask: "Want to map these results to a compliance framework?" and list the available frameworks from the `adapters/` directory:
-
-NIST CSF 2.0, PCI DSS 4.0, DORA, SOC 2, CMMC 2.0, ISO 27001, GDPR, NIS2, MITRE ATT&CK, CRI Profile, OWASP Agentic Security Initiatives 2026, EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, MITRE ATLAS.
-
-When the user selects a framework:
-
-1. Load that adapter file from `adapters/<id>.md` (or the relevant entry from `adapters/index.json`).
-2. Compute outcome scores by averaging the question scores for each SEAT outcome (see `adapters/outcomes.md` for which questions map to which outcomes).
-3. For each requirement in the adapter's mapping table, classify as:
-   - **Met:** outcome score >= the threshold for that assurance level (Required: 4.5, Expected: 2.5, Recommended: 1.5)
-   - **Partial:** score > 0 but below threshold
-   - **Gap:** score is 0 or no questions answered
-4. Present the results:
-   - Overall alignment score (weighted average of effective scores across all mappings)
-   - A table of each requirement: framework reference, SEAT outcome, score, status (Met/Partial/Gap), and missing evidence for gaps
-   - Summary: X of Y requirements met, Z gaps identified
-5. The user may request multiple frameworks in sequence. Keep the assessment answers and recompute for each new framework.
 
 ## Rules
 
 - Keep all data in this conversation. Do not attempt to send, save, or transmit answers anywhere.
-- Before each question, share that question's entry from `assessment/facilitation.md`: the why-this-matters context, and, when the respondent hesitates or asks, the what-good-looks-like and honest-scoring tip. Do not improvise interpretations beyond the facilitation guide. Never suggest which option to pick.
+- Do not editorialize during the questions. Save interpretation for the report.
 - Use the maturity level names Reactive / Developing / Defined / Integrated / Embedded consistently.
 - The assessment is 21 questions. Do not add, remove, or modify questions.
+- Never answer the assessment on the respondent's behalf, including during compliance mapping.
+- When mapping to a framework, use only the requirements present in that adapter file. Do not invent requirements, and do not infer mappings for frameworks that have no adapter here.
 - If the user asks about the methodology, point them to the `framework/` directory or https://app.humanrisk.com/framework.
-- When applying a compliance framework adapter, use the thresholds exactly as specified (Required >= 4.5, Expected >= 2.5, Recommended >= 1.5). Do not round or adjust scores before comparing to thresholds.
 
 ## About SEAT
 
-SEAT is created by Jason Hoenich / HumanRisk (https://humanrisk.com). The framework maps to NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC 2.0, PCI DSS 4.0, SOC 2, GDPR, MITRE ATT&CK, and CRI Profile.
+SEAT is created by Jason Hoenich / HumanRisk (https://humanrisk.com). The framework maps to NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC 2.0, PCI DSS 4.0, SOC 2, GDPR, MITRE ATT&CK, and CRI Profile, plus an AI governance set covering the EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, OWASP ASI 2026, and MITRE ATLAS. All mappings ship in `adapters/`.

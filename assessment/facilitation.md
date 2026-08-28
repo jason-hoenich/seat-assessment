@@ -26,7 +26,7 @@ The standing rule from AGENTS.md applies: when in doubt between two levels, reco
 
 ### Q3: Executive Support
 
-**Why this matters:** SANS puts a mature program at roughly 4.2 full-time people. Most orgs run it as a fraction of one person's job. The distance between those two numbers is executive support, or the lack of it.
+**Why this matters:** SANS 2026 puts a program that embeds culture at 4.3 or more full-time people, and at least 3 before behavior moves at all. Most orgs run it as a fraction of one person's job. The distance between those two numbers is executive support, or the lack of it.
 
 **What good looks like:** Leaders show up in the program (recorded intros, town hall mentions, visible participation), and the budget survives planning season without a fight.
 

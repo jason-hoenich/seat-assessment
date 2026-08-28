@@ -1,98 +1,70 @@
-# SEAT Outcome Definitions
+# SEAT Outcomes
 
-17 canonical outcomes across four pillars. Each outcome maps to one or more assessment questions. Adapter files reference these by ID.
+The canonical SEAT outcomes that every framework adapter maps to. Outcome scores are the bridge between the 21 assessment questions and any compliance framework: score the questions, average them into outcomes, then read the outcomes against an adapter in this directory.
 
-Note: behavioral-impact and behavioral-impact-assessment both exist across adapters. Both are load-bearing and retained as published; they are not merged in this export.
+## Question to outcome map
 
-## Strategy and Governance
+| Question | SEAT outcome | Outcome id |
+|---|---|---|
+| Q1 | Strategic Alignment | `strategic-alignment` |
+| Q2 | Governance Documentation | `governance-documentation` |
+| Q3 | Executive Support | `executive-support` |
+| Q4 | Continuous Improvement | `continuous-improvement` |
+| Q5 | Performance Measurement | `performance-measurement` |
+| Q6 | Strategic Alignment | `strategic-alignment` |
+| Q7 | Strategic Alignment | `strategic-alignment` |
+| Q8 | Continuous Improvement | `continuous-improvement` |
+| Q9 | Targeted Communication | `targeted-communication` |
+| Q10 | Active Participation | `active-participation` |
+| Q11 | Targeted Communication | `targeted-communication` |
+| Q12 | Cultural Relevance | `cultural-relevance` |
+| Q13 | Feedback Responsiveness | `feedback-responsiveness` |
+| Q14 | Continuous Improvement | `continuous-improvement` |
+| Q15 | Risk Driven Assessment | `risk-driven-assessment` |
+| Q16 | Performance Measurement | `performance-measurement` |
+| Q17 | Relevant Tailored Training | `relevant-tailored-training` |
+| Q18 | Effective Learning Methods | `effective-learning-methods` |
+| Q19 | Accessible Inclusive Training | `accessible-inclusive-training` |
+| Q20 | Flexible Effective Delivery | `flexible-effective-delivery` |
+| Q21 | Integrated Training Lifecycle | `integrated-training-lifecycle` |
 
-### strategic-alignment
-**Pillar:** Strategy
-**Description:** Program priorities driven by enterprise risk and compliance requirements.
-**Questions:** Q1, Q6, Q7
+To score an outcome, average the scores of every question mapped to it, skipping N/A answers, and round to one decimal.
 
-### governance-documentation
-**Pillar:** Strategy
-**Description:** Program is fully documented and aligned with internal policies and external compliance requirements.
-**Questions:** Q2
+## Outcome definitions
 
-### executive-support
-**Pillar:** Strategy
-**Description:** Executive leadership actively champions and funds the program.
-**Questions:** Q3
+### Strategy & Governance
 
-### continuous-improvement
-**Pillar:** Strategy
-**Description:** Program is regularly assessed and updated based on findings, incidents, and evolving threats.
-**Questions:** Q4, Q8, Q14
+- **Strategic Alignment** (`strategic-alignment`) -- scored from Q1, Q6, Q7
+- **Governance Documentation** (`governance-documentation`) -- scored from Q2
+- **Executive Support** (`executive-support`) -- scored from Q3
+- **Continuous Improvement** (`continuous-improvement`) -- scored from Q4, Q8, Q14
 
-## Engagement and Culture
+### Engagement & Culture
 
-### targeted-communication
-**Pillar:** Engagement
-**Description:** Awareness content and communications are tailored to specific employee groups, roles, and risk levels.
-**Questions:** Q9, Q11
+- **Targeted Communication** (`targeted-communication`) -- scored from Q9, Q11
+- **Cultural Relevance** (`cultural-relevance`) -- scored from Q12
+- **Active Participation** (`active-participation`) -- scored from Q10
+- **Feedback Responsiveness** (`feedback-responsiveness`) -- scored from Q13
 
-### cultural-relevance
-**Pillar:** Engagement
-**Description:** Awareness efforts reflect the cultural values and language preferences of the workforce.
-**Questions:** Q12
+### Assessment & Metrics
 
-### active-participation
-**Pillar:** Engagement
-**Description:** Employees actively participate in security initiatives, including reporting suspicious activity.
-**Questions:** Q10
+- **Performance Measurement** (`performance-measurement`) -- scored from Q5, Q16
+- **Risk Driven Assessment** (`risk-driven-assessment`) -- scored from Q15
+- **Behavioral Impact** (`behavioral-impact`) -- referenced by adapters; see the overlap note below
+- **Behavioral Impact Assessment** (`behavioral-impact-assessment`) -- referenced by adapters; see the overlap note below
 
-### feedback-responsiveness
-**Pillar:** Engagement
-**Description:** Employee feedback is collected, analyzed, and used to improve the program.
-**Questions:** Q13
+### Training & Development
 
-## Assessment and Metrics
+- **Relevant Tailored Training** (`relevant-tailored-training`) -- scored from Q17
+- **Effective Learning Methods** (`effective-learning-methods`) -- scored from Q18
+- **Accessible Inclusive Training** (`accessible-inclusive-training`) -- scored from Q19
+- **Flexible Effective Delivery** (`flexible-effective-delivery`) -- scored from Q20
+- **Integrated Training Lifecycle** (`integrated-training-lifecycle`) -- scored from Q21
 
-### performance-measurement
-**Pillar:** Assessment
-**Description:** Program effectiveness is tracked through meaningful metrics and accessible reporting.
-**Questions:** Q5, Q16
+## A known overlap, documented honestly
 
-### risk-driven-assessment
-**Pillar:** Assessment
-**Description:** Risk and vulnerability assessments directly inform program priorities and content.
-**Questions:** Q15
+`behavioral-impact` and `behavioral-impact-assessment` are two separate outcome ids describing the same underlying idea. Both are load-bearing across the adapters in this directory, so both are retained here exactly as published and are not merged in this export. If an adapter references one and your scoring covers the other, treat them as the same outcome.
 
-### behavioral-impact
-**Pillar:** Assessment
-**Description:** Changes in employee security behaviors are measured and used to demonstrate program value.
-**Questions:** (no direct question; assessed via simulation and incident data)
+---
 
-### behavioral-impact-assessment
-**Pillar:** Assessment
-**Description:** Ongoing assessment of behavioral changes over time to track effectiveness trends.
-**Questions:** (no direct question; assessed via simulation and incident data)
-
-## Training and Development
-
-### relevant-tailored-training
-**Pillar:** Training
-**Description:** Training materials are aligned with identified risks and tailored to employee roles and needs.
-**Questions:** Q17
-
-### effective-learning-methods
-**Pillar:** Training
-**Description:** Training uses engaging and practical methods, including simulations, that demonstrably improve security behaviors.
-**Questions:** Q18
-
-### accessible-inclusive-training
-**Pillar:** Training
-**Description:** Training is inclusive, multilingual where needed, and accessible to all employees.
-**Questions:** Q19
-
-### flexible-effective-delivery
-**Pillar:** Training
-**Description:** Training is delivered on a consistent cadence adapted to organizational needs.
-**Questions:** Q20
-
-### integrated-training-lifecycle
-**Pillar:** Training
-**Description:** Security training is embedded in onboarding and ongoing professional development.
-**Questions:** Q21
+Part of the [SEAT Assessment](https://github.com/jason-hoenich/seat-assessment) framework adapters. CC BY-ND 4.0.

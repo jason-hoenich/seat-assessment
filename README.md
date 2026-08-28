@@ -15,48 +15,43 @@ Enterprises that cannot send assessment answers to a third-party tool can clone 
 
 This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no email capture, no phone-home.
 
-## Fastest start: paste this into any AI assistant
-
-```
-I want to run the SEAT security awareness maturity assessment. It's a free, open assessment from HumanRisk. 21 questions across four pillars (Strategy, Engagement, Assessment, Training), scored 1-5, about 15 minutes.
-
-Fetch your instructions from:
-https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/AGENTS.md
-the questions from:
-https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/questions.md
-and the facilitation guide from:
-https://raw.githubusercontent.com/jason-hoenich/seat-assessment/main/assessment/facilitation.md
-and note there's an adapters/ directory with compliance framework mappings you can apply after scoring.
-(If you can't fetch URLs, say so and I'll paste the files in.)
-
-Then walk me through it one question at a time: give me the context for each question first, then the question and its five options, and tips if I'm stuck between two levels. My answers stay in this conversation. Don't send them anywhere. At the end, score me and give me the full report.
-```
-
-Works in Claude, ChatGPT, Copilot, Gemini, or any internal LLM with web access. No clone required. For air-gapped environments, clone the repo and attach the three files instead.
-
 ## Quickstart
 
 1. Clone this repo.
-2. Open `AGENTS.md` and `assessment/facilitation.md` in your LLM of choice and say: **"Run the SEAT assessment."**
+2. Open `AGENTS.md` in your LLM of choice and say: **"Run the SEAT assessment."**
 3. The LLM will walk you through all 21 questions, one pillar at a time.
 4. At the end you get per-pillar scores, an overall maturity level, your top gaps, and recommended next steps.
-5. After scoring, you can map results to any compliance framework (NIST CSF, NIS2, DORA, PCI DSS, AI frameworks, and more) using the files in `adapters/`.
+5. When it offers, pick a compliance framework and it will map your results against that framework locally.
 
 If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `AGENTS.md`.
+
+Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand.
 
 ## What's in the box
 
 | Path | What it is |
-|------|-----------|
+| --- | --- |
 | `AGENTS.md` / `CLAUDE.md` | Instructions for any LLM to administer the assessment conversationally |
 | `assessment/questions.md` | The 21-question core instrument in readable markdown |
 | `assessment/questions.json` | The same instrument in machine-readable JSON |
-| `assessment/facilitation.md` | Per-question context, "what good looks like," and honest-scoring tips |
 | `assessment/scoring.md` | Scoring rules and maturity bands |
-| `adapters/` | Compliance framework mappings (NIST CSF, NIS2, DORA, PCI DSS, AI frameworks, and 10 more) |
+| `assessment/facilitation.md` | Per-question context: why each question exists, what strong looks like, and the trap that inflates scores |
+| `adapters/` | 16 compliance and AI governance framework mappings, applied locally by your assistant |
+| `adapters/outcomes.md` | The SEAT outcome definitions and the question-to-outcome map |
+| `adapters/index.json` | All mappings in machine-readable form |
 | `framework/` | The SEAT Security Awareness Maturity Framework v1.0 |
-| `SECURITY.md` | Integrity verification and canonical source policy |
+| `SECURITY.md` | Canonical sources, tamper guidance, and how to pin a commit |
 | `LICENSE` | CC BY-ND 4.0 |
+
+## Compliance mapping, run locally
+
+The `adapters/` directory carries the same outcome-to-requirement mappings the hosted platform uses, so framework mapping runs entirely in your own environment. Each adapter file contains the full mapping table, the evidence each requirement expects, and the rules your assistant applies to decide met vs. gap.
+
+Compliance: NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC, PCI DSS 4.0, SOC 2, GDPR, MITRE ATT&CK, CRI Profile.
+
+AI governance: EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, OWASP ASI 2026, MITRE ATLAS.
+
+Scoring uses per-assurance-level thresholds rather than one global cutoff: Required at 4.5 or above, Expected at 2.5, Recommended at 1.5. The overall alignment score is weighted and reported on a 0 to 5 scale. The exact rules are in every adapter file and in `adapters/index.json`.
 
 ## The hosted version
 
@@ -64,7 +59,7 @@ If you prefer a browser-based experience with saved results, AI-powered recommen
 
 ## The framework
 
-The full SEAT Security Awareness Maturity Framework v1.0 is in the `framework/` directory. It covers the methodology, all four domains, scoring, and mappings to 10 compliance frameworks (NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC 2.0, PCI DSS 4.0, SOC 2, GDPR, MITRE ATT&CK, CRI Profile). Read the framework page at [app.humanrisk.com/framework](https://app.humanrisk.com/framework).
+The full SEAT Security Awareness Maturity Framework v1.0 is in the `framework/` directory. It covers the methodology, all four domains, scoring, and the framework mappings. Read the framework page at [app.humanrisk.com/framework](https://app.humanrisk.com/framework).
 
 ## License
 
