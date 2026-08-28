@@ -25,7 +25,7 @@ This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no e
 
 If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `AGENTS.md`.
 
-Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand.
+Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand. Cloning is the safer default, because an assistant fetching live URLs picks up whatever those files say at that moment. If you are running this against sensitive results, review the files once and then reference them pinned to that commit SHA rather than to `main`. `SECURITY.md` shows the URL form and explains why.
 
 ## What's in the box
 
