@@ -50,8 +50,8 @@ To score an outcome, average the scores of every question mapped to it, skipping
 
 - **Performance Measurement** (`performance-measurement`) -- scored from Q5, Q16
 - **Risk Driven Assessment** (`risk-driven-assessment`) -- scored from Q15
-- **Behavioral Impact** (`behavioral-impact`) -- referenced by adapters; see the overlap note below
-- **Behavioral Impact Assessment** (`behavioral-impact-assessment`) -- referenced by adapters; see the overlap note below
+- **Behavioral Impact** (`behavioral-impact`) -- **not scored by the core instrument**; see the note below
+- **Behavioral Impact Assessment** (`behavioral-impact-assessment`) -- **not scored by the core instrument**; see the note below
 
 ### Training & Development
 
@@ -61,9 +61,15 @@ To score an outcome, average the scores of every question mapped to it, skipping
 - **Flexible Effective Delivery** (`flexible-effective-delivery`) -- scored from Q20
 - **Integrated Training Lifecycle** (`integrated-training-lifecycle`) -- scored from Q21
 
+## Outcomes the core instrument does not score
+
+Two outcomes, `behavioral-impact` and `behavioral-impact-assessment`, are referenced by adapters but are not scored by any of the 21 core questions. In the hosted assessment they are scored by additional framework-specific questions that are outside this core instrument. Here, any requirement mapped to them is reported as **not assessed** rather than as a gap, and is excluded from the overall alignment score. Reporting them as gaps would mark every program as failing a requirement it was never asked about, and would drag every score down by a fixed amount. If you need those outcomes scored, the hosted assessment at https://app.humanrisk.com asks the additional questions.
+
+The two ids also overlap in meaning. Both are load-bearing across the adapters, so both are retained here exactly as published and are not merged in this export.
+
 ## A known overlap, documented honestly
 
-`behavioral-impact` and `behavioral-impact-assessment` are two separate outcome ids describing the same underlying idea. Both are load-bearing across the adapters in this directory, so both are retained here exactly as published and are not merged in this export. If an adapter references one and your scoring covers the other, treat them as the same outcome.
+If an adapter references one and your scoring covers the other, treat them as the same outcome.
 
 ---
 

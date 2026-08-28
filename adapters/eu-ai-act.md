@@ -11,32 +11,33 @@ Mapping of SEAT outcomes to EU AI Act obligations for providers and deployers, c
 
 You need the respondent's per-question scores (1-5) from `assessment/questions.md`, produced by the flow in `AGENTS.md`. Then:
 
-1. **Compute each outcome score.** Every question carries a SEAT outcome id (see `adapters/outcomes.md`). For an outcome, average the scores of its questions, skipping any answered N/A, and round to one decimal. An outcome with no answered questions scores 0.
-2. **Decide met or gap, per assurance level.** The threshold depends on the mapping's assurance level, not a single global number:
+1. **Compute each outcome score.** Every outcome is scored from the questions listed for it in `adapters/outcomes.md`. Average those question scores, skipping any answered N/A, and round to one decimal.
+2. **Decide met or gap, per assurance level.** The threshold depends on the row's assurance level, not a single global number:
    - Required: outcome score >= 4.5
    - Expected: outcome score >= 2.5
    - Recommended: outcome score >= 1.5
-   An outcome is met when its score is at or above the threshold for that row, otherwise it is a gap.
-3. **List missing evidence.** For any unmet row whose assurance level is Required or Expected, report that row's evidence types as missing evidence, together with its framework reference.
-4. **Compute the overall alignment score.** For each row the effective score is the outcome score when met. When not met it is `(outcome score / 5) * threshold * 0.5`, the penalty the platform applies. Multiply each effective score by the row weight (default 1), sum, divide by total weight, round to one decimal. The result is on a 0 to 5 scale, not a percentage.
+   At or above the row's threshold is **met**. Below it is a **gap**. There is no partial state; the platform scores this as met or not met, and this export matches it.
+3. **Rows marked "Not assessed".** Some requirements map to a SEAT outcome that no core question feeds. Report these as **not assessed**, never as a gap, and leave them out of the overall score entirely. A gap means the program was measured and fell short. Not assessed means the 21-question core instrument does not cover it. Say so plainly, list the evidence the framework expects so the respondent knows what it would take, and note that the hosted assessment at https://app.humanrisk.com asks the additional framework-specific questions that score these outcomes.
+4. **List missing evidence.** For any row that is a gap at Required or Expected assurance, report that row's evidence types as missing evidence together with its framework reference.
+5. **Compute the overall alignment score.** Using only the scored rows: the effective score is the outcome score when met, and `(outcome score / 5) * threshold * 0.5` when it is a gap, which is the penalty the platform applies. Multiply each effective score by the row weight, sum, and divide by the total weight of the scored rows. Round to one decimal. The result is on a 0 to 5 scale, not a percentage.
 
-Report met, gap, and missing evidence per requirement, then the overall score. Do not invent requirements that are not in the table below, and never answer the assessment questions on the respondent's behalf.
+Report the overall score, met/gap per requirement, any not-assessed requirements, and missing evidence for each gap. Do not invent requirements that are not in the table below, and never answer the assessment questions on the respondent's behalf.
 
 ## Mapping table
 
-| SEAT outcome | Outcome id | Framework reference | Assurance | Evidence expected | Cadence | Weight |
-|---|---|---|---|---|---|---|
-| Strategic Alignment | `strategic-alignment` | Art. 4 | Expected | Policy Document, Assessment Report | Annual | 4 |
-| Governance Documentation | `governance-documentation` | Art. 4 | Required | Policy Document, Training Record, Assessment Report | Annual | 5 |
-| Executive Support | `executive-support` | Art. 4 | Expected | Board Minutes, Training Record | Annual | 3 |
-| Continuous Improvement | `continuous-improvement` | Art. 4, Art. 50 | Expected | Assessment Report, Policy Document | Continuous | 3 |
-| Targeted Communication | `targeted-communication` | Art. 4 | Required | Communication Artifact, Curriculum Document, Training Record | Continuous | 5 |
-| Active Participation | `active-participation` | Art. 4, Art. 50 | Recommended | Feedback Survey, Incident Report | Continuous | 3 |
-| Performance Measurement | `performance-measurement` | Art. 4 | Expected | Metric Report, Assessment Report | Annual | 4 |
-| Risk Driven Assessment | `risk-driven-assessment` | Art. 4 | Expected | Assessment Report, Policy Document | Annual | 4 |
-| Relevant Tailored Training | `relevant-tailored-training` | Art. 4 | Required | Curriculum Document, Training Record | Annual | 5 |
-| Accessible Inclusive Training | `accessible-inclusive-training` | Art. 4 | Required | Training Record, Metric Report | Continuous | 4 |
-| Integrated Training Lifecycle | `integrated-training-lifecycle` | Art. 4, Art. 26 | Expected | Training Record, Curriculum Document, Other | Onboarding | 3 |
+| SEAT outcome | Outcome id | Framework reference | Assurance | Evidence expected | Cadence | Weight | Scored |
+|---|---|---|---|---|---|---|---|
+| Strategic Alignment | `strategic-alignment` | Art. 4 | Expected | Policy Document, Assessment Report | Annual | 4 | Yes |
+| Governance Documentation | `governance-documentation` | Art. 4 | Required | Policy Document, Training Record, Assessment Report | Annual | 5 | Yes |
+| Executive Support | `executive-support` | Art. 4 | Expected | Board Minutes, Training Record | Annual | 3 | Yes |
+| Continuous Improvement | `continuous-improvement` | Art. 4, Art. 50 | Expected | Assessment Report, Policy Document | Continuous | 3 | Yes |
+| Targeted Communication | `targeted-communication` | Art. 4 | Required | Communication Artifact, Curriculum Document, Training Record | Continuous | 5 | Yes |
+| Active Participation | `active-participation` | Art. 4, Art. 50 | Recommended | Feedback Survey, Incident Report | Continuous | 3 | Yes |
+| Performance Measurement | `performance-measurement` | Art. 4 | Expected | Metric Report, Assessment Report | Annual | 4 | Yes |
+| Risk Driven Assessment | `risk-driven-assessment` | Art. 4 | Expected | Assessment Report, Policy Document | Annual | 4 | Yes |
+| Relevant Tailored Training | `relevant-tailored-training` | Art. 4 | Required | Curriculum Document, Training Record | Annual | 5 | Yes |
+| Accessible Inclusive Training | `accessible-inclusive-training` | Art. 4 | Required | Training Record, Metric Report | Continuous | 4 | Yes |
+| Integrated Training Lifecycle | `integrated-training-lifecycle` | Art. 4, Art. 26 | Expected | Training Record, Curriculum Document, Other | Onboarding | 3 | Yes |
 
 ## Mapping notes
 

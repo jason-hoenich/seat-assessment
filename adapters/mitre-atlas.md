@@ -11,32 +11,33 @@ Mapping of SEAT outcomes to MITRE ATLAS, using its adversary tactics, techniques
 
 You need the respondent's per-question scores (1-5) from `assessment/questions.md`, produced by the flow in `AGENTS.md`. Then:
 
-1. **Compute each outcome score.** Every question carries a SEAT outcome id (see `adapters/outcomes.md`). For an outcome, average the scores of its questions, skipping any answered N/A, and round to one decimal. An outcome with no answered questions scores 0.
-2. **Decide met or gap, per assurance level.** The threshold depends on the mapping's assurance level, not a single global number:
+1. **Compute each outcome score.** Every outcome is scored from the questions listed for it in `adapters/outcomes.md`. Average those question scores, skipping any answered N/A, and round to one decimal.
+2. **Decide met or gap, per assurance level.** The threshold depends on the row's assurance level, not a single global number:
    - Required: outcome score >= 4.5
    - Expected: outcome score >= 2.5
    - Recommended: outcome score >= 1.5
-   An outcome is met when its score is at or above the threshold for that row, otherwise it is a gap.
-3. **List missing evidence.** For any unmet row whose assurance level is Required or Expected, report that row's evidence types as missing evidence, together with its framework reference.
-4. **Compute the overall alignment score.** For each row the effective score is the outcome score when met. When not met it is `(outcome score / 5) * threshold * 0.5`, the penalty the platform applies. Multiply each effective score by the row weight (default 1), sum, divide by total weight, round to one decimal. The result is on a 0 to 5 scale, not a percentage.
+   At or above the row's threshold is **met**. Below it is a **gap**. There is no partial state; the platform scores this as met or not met, and this export matches it.
+3. **Rows marked "Not assessed".** Some requirements map to a SEAT outcome that no core question feeds. Report these as **not assessed**, never as a gap, and leave them out of the overall score entirely. A gap means the program was measured and fell short. Not assessed means the 21-question core instrument does not cover it. Say so plainly, list the evidence the framework expects so the respondent knows what it would take, and note that the hosted assessment at https://app.humanrisk.com asks the additional framework-specific questions that score these outcomes.
+4. **List missing evidence.** For any row that is a gap at Required or Expected assurance, report that row's evidence types as missing evidence together with its framework reference.
+5. **Compute the overall alignment score.** Using only the scored rows: the effective score is the outcome score when met, and `(outcome score / 5) * threshold * 0.5` when it is a gap, which is the penalty the platform applies. Multiply each effective score by the row weight, sum, and divide by the total weight of the scored rows. Round to one decimal. The result is on a 0 to 5 scale, not a percentage.
 
-Report met, gap, and missing evidence per requirement, then the overall score. Do not invent requirements that are not in the table below, and never answer the assessment questions on the respondent's behalf.
+Report the overall score, met/gap per requirement, any not-assessed requirements, and missing evidence for each gap. Do not invent requirements that are not in the table below, and never answer the assessment questions on the respondent's behalf.
 
 ## Mapping table
 
-| SEAT outcome | Outcome id | Framework reference | Assurance | Evidence expected | Cadence | Weight |
-|---|---|---|---|---|---|---|
-| Strategic Alignment | `strategic-alignment` | ATLAS threat model (all tactics) | Recommended | Policy Document, Assessment Report | Annual | 3 |
-| Governance Documentation | `governance-documentation` | ATLAS: ML Supply Chain Compromise | Recommended | Policy Document, Assessment Report | Annual | 3 |
-| Continuous Improvement | `continuous-improvement` | ATLAS case studies (living) | Expected | Assessment Report, Incident Report | Quarterly | 3 |
-| Targeted Communication | `targeted-communication` | ATLAS: Data Poisoning, Model Evasion | Expected | Communication Artifact, Training Record, Curriculum Document | Continuous | 3 |
-| Active Participation | `active-participation` | ATLAS: Reconnaissance, LLM Prompt Injection | Expected | Incident Report, Feedback Survey | Continuous | 3 |
-| Performance Measurement | `performance-measurement` | ATLAS tactics (detection coverage) | Expected | Metric Report, Assessment Report | Quarterly | 3 |
-| Risk Driven Assessment | `risk-driven-assessment` | ATLAS: ML Attack Staging, Model Evasion | Expected | Assessment Report, Simulation Results | Semi-Annual | 4 |
-| Behavioral Impact | `behavioral-impact` | ATLAS case studies | Recommended | Simulation Results, Incident Report | Quarterly | 3 |
-| Relevant Tailored Training | `relevant-tailored-training` | ATLAS techniques (by role) | Expected | Curriculum Document, Training Record | Annual | 3 |
-| Effective Learning Methods | `effective-learning-methods` | ATLAS case studies (scenario fuel) | Expected | Training Record, Simulation Results | As Needed | 4 |
-| Integrated Training Lifecycle | `integrated-training-lifecycle` | ATLAS threat model (ML roles) | Recommended | Training Record | Onboarding | 3 |
+| SEAT outcome | Outcome id | Framework reference | Assurance | Evidence expected | Cadence | Weight | Scored |
+|---|---|---|---|---|---|---|---|
+| Strategic Alignment | `strategic-alignment` | ATLAS threat model (all tactics) | Recommended | Policy Document, Assessment Report | Annual | 3 | Yes |
+| Governance Documentation | `governance-documentation` | ATLAS: ML Supply Chain Compromise | Recommended | Policy Document, Assessment Report | Annual | 3 | Yes |
+| Continuous Improvement | `continuous-improvement` | ATLAS case studies (living) | Expected | Assessment Report, Incident Report | Quarterly | 3 | Yes |
+| Targeted Communication | `targeted-communication` | ATLAS: Data Poisoning, Model Evasion | Expected | Communication Artifact, Training Record, Curriculum Document | Continuous | 3 | Yes |
+| Active Participation | `active-participation` | ATLAS: Reconnaissance, LLM Prompt Injection | Expected | Incident Report, Feedback Survey | Continuous | 3 | Yes |
+| Performance Measurement | `performance-measurement` | ATLAS tactics (detection coverage) | Expected | Metric Report, Assessment Report | Quarterly | 3 | Yes |
+| Risk Driven Assessment | `risk-driven-assessment` | ATLAS: ML Attack Staging, Model Evasion | Expected | Assessment Report, Simulation Results | Semi-Annual | 4 | Yes |
+| Behavioral Impact | `behavioral-impact` | ATLAS case studies | Recommended | Simulation Results, Incident Report | Quarterly | 3 | **Not assessed** |
+| Relevant Tailored Training | `relevant-tailored-training` | ATLAS techniques (by role) | Expected | Curriculum Document, Training Record | Annual | 3 | Yes |
+| Effective Learning Methods | `effective-learning-methods` | ATLAS case studies (scenario fuel) | Expected | Training Record, Simulation Results | As Needed | 4 | Yes |
+| Integrated Training Lifecycle | `integrated-training-lifecycle` | ATLAS threat model (ML roles) | Recommended | Training Record | Onboarding | 3 | Yes |
 
 ## Mapping notes
 

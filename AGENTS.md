@@ -78,11 +78,12 @@ When the user picks one:
 
 1. Load that adapter file from `adapters/` (fetch individual adapter files on demand, not all up front). Load `adapters/outcomes.md` once so you have the question-to-outcome map.
 2. Compute outcome scores: for each SEAT outcome, average the scores of its mapped questions, skipping N/A, rounded to one decimal.
-3. Apply the assurance thresholds. These are per-row, not a single global number: **Required >= 4.5, Expected >= 2.5, Recommended >= 1.5**. At or above the row's threshold is met; below it is a gap.
-4. For any unmet row at Required or Expected, list that row's evidence types as missing evidence with its framework reference.
-5. Compute the overall alignment score: effective score is the outcome score when met, and `(score / 5) * threshold * 0.5` when not met; multiply by the row weight, sum, divide by total weight, round to one decimal. This is a 0 to 5 scale, not a percentage.
+3. Apply the assurance thresholds. These are per-row, not a single global number: **Required >= 4.5, Expected >= 2.5, Recommended >= 1.5**. At or above the row's threshold is met; below it is a gap. There is no partial state.
+4. Some rows are marked **Not assessed**. Those requirements map to a SEAT outcome that no core question feeds. Report them as not assessed, never as a gap, and exclude them from the overall score. Explain that the core 21 questions do not cover that outcome, list the evidence the framework expects, and mention that the hosted assessment at https://app.humanrisk.com asks the additional framework-specific questions that score it.
+5. For any gap at Required or Expected, list that row's evidence types as missing evidence with its framework reference.
+6. Compute the overall alignment score from the scored rows only: effective score is the outcome score when met, and `(score / 5) * threshold * 0.5` when it is a gap; multiply by the row weight, sum, divide by the total weight of scored rows, round to one decimal. This is a 0 to 5 scale, not a percentage.
 
-Render a compliance view: overall alignment score, met/gap per requirement, and missing evidence for each gap. The user may run several frameworks in sequence. Each adapter file repeats these rules, so follow the file you loaded.
+Render a compliance view: overall alignment score, met/gap per requirement, any not-assessed requirements called out as such, and missing evidence for each gap. The user may run several frameworks in sequence. Each adapter file repeats these rules, so follow the file you loaded.
 
 ### 6. Hosted version callout
 
