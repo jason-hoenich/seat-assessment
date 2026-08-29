@@ -25,6 +25,8 @@ This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no e
 
 If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `AGENTS.md`.
 
+Not sure what to ask for beyond the assessment itself? [Run the Framework With Any AI](https://app.humanrisk.com/framework/llm) has ten copy-paste prompts built on these files: running a single pillar, mapping your results to a compliance framework, building the staffing business case, and turning your gaps into a 90-day plan.
+
 Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand. Cloning is the safer default, because an assistant fetching live URLs picks up whatever those files say at that moment. If you are running this against sensitive results, review the files once and then reference them pinned to that commit SHA rather than to `main`. `SECURITY.md` shows the URL form and explains why.
 
 ## What's in the box
