@@ -22,10 +22,11 @@ This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no e
 3. The LLM will walk you through all 21 questions, one pillar at a time.
 4. At the end you get per-pillar scores, an overall maturity level, your top gaps, and recommended next steps.
 5. When it offers, pick a compliance framework and it will map your results against that framework locally.
+6. When it offers, pick a research source and it will read your weakest outcomes against published threat and benchmark data, locally.
 
 If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `AGENTS.md`.
 
-Not sure what to ask for beyond the assessment itself? [Run the Framework With Any AI](https://app.humanrisk.com/framework/llm) has ten copy-paste prompts built on these files: running a single pillar, mapping your results to a compliance framework, building the staffing business case, and turning your gaps into a 90-day plan.
+Not sure what to ask for beyond the assessment itself? [Run the Framework With Any AI](https://app.humanrisk.com/framework/llm) has fifteen copy-paste prompts built on these files: running a single pillar, mapping your results to a compliance framework, building the staffing business case, reading your results against published research, and turning your gaps into a 90-day plan.
 
 Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand. Cloning is the safer default, because an assistant fetching live URLs picks up whatever those files say at that moment. If you are running this against sensitive results, review the files once and then reference them pinned to that commit SHA rather than to `main`. `SECURITY.md` shows the URL form and explains why.
 
@@ -41,6 +42,9 @@ Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `asse
 | `adapters/` | 16 compliance and AI governance framework mappings, applied locally by your assistant |
 | `adapters/outcomes.md` | The SEAT outcome definitions and the question-to-outcome map |
 | `adapters/index.json` | All mappings in machine-readable form |
+| `research/` | Published research sources, mapped to SEAT outcomes and applied locally |
+| `research/sources.md` | What a research source may and may not do, and how an assistant applies one |
+| `research/index.json` | All research sources in machine-readable form |
 | `framework/` | The SEAT Security Awareness Maturity Framework v1.0 |
 | `SECURITY.md` | Canonical sources, tamper guidance, and how to pin a commit |
 | `LICENSE` | CC BY-ND 4.0 |
@@ -54,6 +58,16 @@ Compliance: NIST CSF 2.0, ISO 27001, NIS2, DORA, CMMC, PCI DSS 4.0, SOC 2, GDPR,
 AI governance: EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10, OWASP ASI 2026, MITRE ATLAS.
 
 Scoring uses per-assurance-level thresholds rather than one global cutoff: Required at 4.5 or above, Expected at 2.5, Recommended at 1.5. The overall alignment score is weighted and reported on a 0 to 5 scale. The exact rules are in every adapter file and in `adapters/index.json`.
+
+## Research context, run locally
+
+A maturity score tells you where a program is weak. It does not tell you what that weakness costs. The `research/` directory carries published research mapped to the same SEAT outcomes the adapters use, so your assistant can read your weakest outcomes against external evidence without sending anything anywhere.
+
+Current sources: the CrowdStrike 2026 Threat Hunting Report for observed attacker tradecraft, the SANS 2026 Security Awareness and Culture Report for practitioner staffing benchmarks, CybSafe's Oh, Behave! 2025-2026 for workforce behavior, and the Fable Security AI Behavior Index for measured AI behavior broken out by role.
+
+Research explains exposure. It never changes a score, never creates a gap, and never determines compliance status, which is what the adapters are for. `research/sources.md` states those limits and explains which kind of evidence supports which kind of argument, since a practitioner survey and threat telemetry cannot prove the same things. Every figure lives in its source file, and your assistant is instructed not to supply numbers from its own memory, which is what keeps a reading reproducible rather than improvised.
+
+These are summaries of published third-party research, presented with attribution and a link to each original. They are not a substitute for reading the source reports.
 
 ## The hosted version
 
