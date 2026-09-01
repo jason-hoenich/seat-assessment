@@ -1,0 +1,116 @@
+{
+  "generated": "2026-08-31",
+  "purpose": "External research sources that contextualize SEAT outcome scores. Research sources explain what a score exposes a program to. They never change a score, create a gap, or establish compliance status.",
+  "rules": {
+    "findingsAreEvidenceNotScores": true,
+    "figuresRestrictedToSourceFile": true,
+    "respondentDataOverridesBenchmark": true,
+    "attributionRequired": true,
+    "complianceStatusComesOnlyFromAdapters": true,
+    "stalenessWarningAfterMonths": 18
+  },
+  "sources": [
+    {
+      "id": "crowdstrike-2026-thr",
+      "name": "CrowdStrike 2026 Threat Hunting Report",
+      "publisher": "CrowdStrike Counter Adversary Operations (OverWatch)",
+      "sourceType": "threat-telemetry",
+      "description": "Frontline adversary tradecraft from observed intrusions. Strongest source for whether a program's curriculum and metrics match techniques currently in use.",
+      "bestFor": [
+        "threat alignment",
+        "curriculum gaps",
+        "uncovered populations",
+        "metric relevance"
+      ],
+      "coverageWindow": "2025-07-01 to 2026-06-30",
+      "published": "2026-08-01",
+      "lastUpdated": "2026-08-31",
+      "officialLink": "https://www.crowdstrike.com/en-us/resources/reports/threat-hunting-report/",
+      "file": "research/crowdstrike-2026-threat-hunting.md",
+      "primaryOutcomes": [
+        "relevant-tailored-training",
+        "performance-measurement",
+        "feedback-responsiveness",
+        "risk-driven-assessment",
+        "accessible-inclusive-training",
+        "flexible-effective-delivery",
+        "continuous-improvement",
+        "governance-documentation"
+      ]
+    },
+    {
+      "id": "sans-2026",
+      "name": "SANS 2026 Security Awareness and Culture Report",
+      "publisher": "SANS Institute",
+      "sourceType": "practitioner-survey",
+      "description": "Practitioner benchmark on staffing, program age, and barriers. Strongest source for resourcing and headcount arguments.",
+      "bestFor": [
+        "staffing business case",
+        "investment gap",
+        "expectation setting",
+        "program barriers"
+      ],
+      "coverageWindow": "11th annual, 1,700+ practitioners",
+      "published": "2026-08-28",
+      "lastUpdated": "2026-08-31",
+      "officialLink": "https://www.sans.org/security-awareness-training/resources/reports/",
+      "file": "research/sans-2026-awareness-culture.md",
+      "primaryOutcomes": [
+        "strategic-alignment",
+        "executive-support",
+        "continuous-improvement",
+        "risk-driven-assessment",
+        "relevant-tailored-training",
+        "effective-learning-methods"
+      ]
+    },
+    {
+      "id": "cybsafe-2026",
+      "name": "CybSafe Oh, Behave! 2025-2026",
+      "publisher": "CybSafe",
+      "sourceType": "population-survey",
+      "description": "Population-level attitudes and self-reported behavior. Strongest source for arguing that knowing and doing are separate problems.",
+      "bestFor": [
+        "behavior versus awareness",
+        "AI policy versus practice",
+        "content relevance"
+      ],
+      "coverageWindow": "Annual study",
+      "published": "2025-09-29",
+      "lastUpdated": "2026-08-31",
+      "officialLink": "https://www.cybsafe.com/research/",
+      "file": "research/cybsafe-2026-oh-behave.md",
+      "primaryOutcomes": [
+        "risk-driven-assessment",
+        "relevant-tailored-training",
+        "cultural-relevance",
+        "effective-learning-methods"
+      ]
+    },
+    {
+      "id": "fable-abi-2026",
+      "name": "Fable Security AI Behavior Index, Vol. 1",
+      "publisher": "Fable Security",
+      "sourceType": "detection-telemetry",
+      "description": "Measured detections across roughly 290,000 employees, broken out by job function. Strongest source for role-based targeting arguments and for AI visibility gaps.",
+      "bestFor": [
+        "role-based segmentation",
+        "AI visibility",
+        "high-risk population identification"
+      ],
+      "coverageWindow": "90 days, 30+ organizations",
+      "published": "2026-06-01",
+      "lastUpdated": "2026-08-31",
+      "officialLink": "https://www.fablesecurity.com/research",
+      "file": "research/fable-ai-behavior-index-2026.md",
+      "primaryOutcomes": [
+        "risk-driven-assessment",
+        "targeted-communication",
+        "effective-learning-methods",
+        "governance-documentation",
+        "active-participation",
+        "performance-measurement"
+      ]
+    }
+  ]
+}
