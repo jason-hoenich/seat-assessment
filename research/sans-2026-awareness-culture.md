@@ -3,7 +3,7 @@
 Practitioner benchmark data on program staffing, maturity drivers, and barriers, mapped to the SEAT outcomes it informs.
 
 **Publisher:** SANS Institute
-**Coverage:** 11th annual report, 1,700+ practitioner respondents
+**Coverage:** Eleven years of this report; over 1,700 security awareness practitioners worldwide
 **Published:** 2026-08-28
 **Source last updated:** 2026-08-31
 **Official reference:** https://www.sans.org/security-awareness-training/resources/reports/
@@ -26,11 +26,12 @@ You need the respondent's per-question scores (1-5) and their outcome scores, pr
 | Finding | Figure | SEAT outcome | Outcome id | What a low score here exposes |
 |---|---|---|---|---|
 | Staffing drives maturity | Culture change requires at least 4.3 dedicated FTEs; behavior change at least 3 | Strategic Alignment | `strategic-alignment` | A program expected to change culture on a fraction of one person's time |
-| Program age drives maturity | The most mature programs run 6+ FTEs over 10+ years | Continuous Improvement | `continuous-improvement` | Restarting the program every reorg, so maturity never compounds |
-| Time is the top barrier | Lack of time has been the number one program barrier for the fifth-plus consecutive year | Executive Support | `executive-support` | Sponsorship that approves tools but not the hours to run the program |
-| Social engineering leads human risk | Ranked the number one human risk by 77% of respondents | Risk Driven Assessment | `risk-driven-assessment` | Risk register that does not name the top-ranked human risk |
-| AI risk rising fast | AI moved from the number four human risk to number two in two years | Relevant Tailored Training | `relevant-tailored-training` | Curriculum with no AI content, or AI content limited to policy |
-| Practitioners now use AI themselves | 75% of security awareness teams use AI, mostly for content creation | Effective Learning Methods | `effective-learning-methods` | Manual content production consuming the hours the top barrier already limits |
+| Program age drives maturity | The most mature programs often had more than six dedicated FTEs and had been running for more than 10 years | Continuous Improvement | `continuous-improvement` | Restarting the program every reorg, so maturity never compounds |
+| Time is the top barrier | The biggest barrier, year after year, is not technology or budget. It is time | Executive Support | `executive-support` | Sponsorship that approves tools but not the hours to run the program |
+| Social engineering leads human risk | Social engineering attacks (phishing, vishing, smishing, deepfake) top the human risk list at 77% | Risk Driven Assessment | `risk-driven-assessment` | Risk register that does not name the top-ranked human risk |
+| AI risk rising fast | AI jumped from the number four human risk to number two | Relevant Tailored Training | `relevant-tailored-training` | Curriculum with no AI content, or AI content limited to policy |
+| Practitioners now use AI themselves | Over 70% of security awareness teams reported adopting AI to some extent, with content creation the most common use case | Effective Learning Methods | `effective-learning-methods` | Manual content production consuming the hours the top barrier already limits |
+| Culture change is a multi-year horizon | Organization-wide impact could take five to ten years | Continuous Improvement | `continuous-improvement` | Program judged on a budget cycle against an effect that runs on a decade |
 | Compensation benchmark | Average practitioner salary is $123,624 | Executive Support | `executive-support` | A headcount ask with no cost anchor attached |
 
 ## Notes by outcome
@@ -39,7 +40,7 @@ You need the respondent's per-question scores (1-5) and their outcome scores, pr
 
 **Executive Support (`executive-support`).** Pair the time barrier with the salary benchmark when building a case. The persistent finding is that programs stall on hours rather than on knowledge, which means the ask is for capacity, not for tooling. Ask the respondent what leadership currently cares about before framing it.
 
-**Continuous Improvement (`continuous-improvement`).** The 10+ year finding matters for expectation setting. Maturity compounds, so a program two years in that scores as Developing is on track rather than failing. Use this to prevent a respondent from reading a mid-range score as a verdict.
+**Continuous Improvement (`continuous-improvement`).** The 10-year finding matters for expectation setting, and the report's own five-to-ten-year horizon for organization-wide impact matters more. Maturity compounds, so a program two years in that scores as Developing is on track rather than failing. Use this to prevent a respondent from reading a mid-range score as a verdict.
 
 **Risk Driven Assessment (`risk-driven-assessment`) and Relevant Tailored Training (`relevant-tailored-training`).** Social engineering at 77% and AI's climb to number two set the two topics a current curriculum has to cover. If the respondent's training content addresses neither, that is a concrete finding rather than a general observation.
 

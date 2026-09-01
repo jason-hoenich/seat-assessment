@@ -7,7 +7,8 @@
     "respondentDataOverridesBenchmark": true,
     "attributionRequired": true,
     "complianceStatusComesOnlyFromAdapters": true,
-    "stalenessWarningAfterMonths": 18
+    "stalenessWarningAfterMonths": 18,
+    "allFiguresVerifiedAgainstPublishedSource": "2026-08-31"
   },
   "sources": [
     {
@@ -36,7 +37,8 @@
         "flexible-effective-delivery",
         "continuous-improvement",
         "governance-documentation"
-      ]
+      ],
+      "figuresVerifiedAgainstSource": true
     },
     {
       "id": "sans-2026",
@@ -50,7 +52,7 @@
         "expectation setting",
         "program barriers"
       ],
-      "coverageWindow": "11th annual, 1,700+ practitioners",
+      "coverageWindow": "Eleven years of this report; over 1,700 practitioners worldwide",
       "published": "2026-08-28",
       "lastUpdated": "2026-08-31",
       "officialLink": "https://www.sans.org/security-awareness-training/resources/reports/",
@@ -62,7 +64,8 @@
         "risk-driven-assessment",
         "relevant-tailored-training",
         "effective-learning-methods"
-      ]
+      ],
+      "figuresVerifiedAgainstSource": true
     },
     {
       "id": "cybsafe-2026",
@@ -75,7 +78,7 @@
         "AI policy versus practice",
         "content relevance"
       ],
-      "coverageWindow": "Annual study",
+      "coverageWindow": "4,573 participants across 7 countries, fieldwork May 2-27 2025",
       "published": "2025-09-29",
       "lastUpdated": "2026-08-31",
       "officialLink": "https://www.cybsafe.com/research/",
@@ -85,7 +88,8 @@
         "relevant-tailored-training",
         "cultural-relevance",
         "effective-learning-methods"
-      ]
+      ],
+      "figuresVerifiedAgainstSource": true
     },
     {
       "id": "fable-abi-2026",
@@ -110,7 +114,8 @@
         "governance-documentation",
         "active-participation",
         "performance-measurement"
-      ]
+      ],
+      "figuresVerifiedAgainstSource": true
     }
   ]
 }
