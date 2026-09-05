@@ -36,6 +36,7 @@ Different evidence supports different arguments. Reaching for the wrong type pro
 | Detection telemetry | Measured behavior of real employees | Role-based targeting, visibility gaps | Causal claims; these are correlations |
 | Practitioner survey | What program owners report about their programs | Resourcing arguments, expectation setting | Claims about incident rates or effectiveness |
 | Population survey | Self-reported attitudes and behavior | Behavior versus awareness arguments | Precise behavioral rates; self-report understates risk |
+| Usage telemetry | Observed tool usage by real employees, classified by a vendor | Where work actually happens; what tenant-keyed guidance and governance fail to reach | How a workforce behaves in general; violation, incident, or exposure rates; the panel is the vendor's own customers |
 
 ## Combining sources
 

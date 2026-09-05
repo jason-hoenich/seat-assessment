@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31",
+  "generated": "2026-09-05",
   "purpose": "External research sources that contextualize SEAT outcome scores. Research sources explain what a score exposes a program to. They never change a score, create a gap, or establish compliance status.",
   "rules": {
     "findingsAreEvidenceNotScores": true,
@@ -8,7 +8,7 @@
     "attributionRequired": true,
     "complianceStatusComesOnlyFromAdapters": true,
     "stalenessWarningAfterMonths": 18,
-    "allFiguresVerifiedAgainstPublishedSource": "2026-08-31"
+    "allFiguresVerifiedAgainstPublishedSource": "2026-09-05"
   },
   "sources": [
     {
@@ -114,6 +114,33 @@
         "governance-documentation",
         "active-participation",
         "performance-measurement"
+      ],
+      "figuresVerifiedAgainstSource": true
+    },
+    {
+      "id": "harmonic-2026-aui",
+      "name": "Harmonic Security AI Usage Index 2026",
+      "publisher": "Harmonic Security",
+      "sourceType": "usage-telemetry",
+      "description": "Observed AI-session minutes across six tools, classified personal versus business. Strongest source for arguing that AI guidance and governance keyed to the enterprise tenant miss where the work actually happens.",
+      "bestFor": [
+        "AI coverage gaps",
+        "department targeting",
+        "policy keyed to account tier",
+        "AI exposure measurement"
+      ],
+      "coverageWindow": "Trailing seven weeks ending April 2026; 1,935,247 classified minutes across a panel of enterprise organizations",
+      "published": "2026-05-20",
+      "lastUpdated": "2026-09-05",
+      "officialLink": "https://www.harmonic.security/resources/ai-usage-index-report-2026",
+      "file": "research/harmonic-2026-ai-usage-index.md",
+      "primaryOutcomes": [
+        "targeted-communication",
+        "risk-driven-assessment",
+        "relevant-tailored-training",
+        "performance-measurement",
+        "governance-documentation",
+        "integrated-training-lifecycle"
       ],
       "figuresVerifiedAgainstSource": true
     }
