@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-05",
+  "generated": "2026-09-06",
   "purpose": "External research sources that contextualize SEAT outcome scores. Research sources explain what a score exposes a program to. They never change a score, create a gap, or establish compliance status.",
   "rules": {
     "findingsAreEvidenceNotScores": true,
@@ -8,7 +8,7 @@
     "attributionRequired": true,
     "complianceStatusComesOnlyFromAdapters": true,
     "stalenessWarningAfterMonths": 18,
-    "allFiguresVerifiedAgainstPublishedSource": "2026-09-05"
+    "allFiguresVerifiedAgainstPublishedSource": "2026-09-06"
   },
   "sources": [
     {
@@ -141,6 +141,57 @@
         "performance-measurement",
         "governance-documentation",
         "integrated-training-lifecycle"
+      ],
+      "figuresVerifiedAgainstSource": true
+    },
+    {
+      "id": "verizon-dbir-2026",
+      "name": "Verizon 2026 Data Breach Investigations Report (DBIR)",
+      "publisher": "Verizon Business",
+      "sourceType": "threat-telemetry",
+      "description": "Breach-corpus evidence on the human element and shadow AI, from a publisher that sells no remediation against its findings. The anchor source: treat vendor telemetry as corroboration of it. Shadow-AI and insider figures are DLP detection telemetry within the same report.",
+      "bestFor": [
+        "proof not promise",
+        "shadow AI adoption",
+        "governance keyed to the wrong accounts",
+        "mobile versus email phishing",
+        "human element flat despite activity"
+      ],
+      "coverageWindow": "Incident timeframe Nov 1 2024 to Oct 31 2025; 19th annual edition",
+      "published": "2026-05-19",
+      "lastUpdated": "2026-09-06",
+      "officialLink": "https://www.verizon.com/business/resources/reports/dbir/",
+      "file": "research/verizon-dbir-2026.md",
+      "primaryOutcomes": [
+        "risk-driven-assessment",
+        "governance-documentation",
+        "performance-measurement",
+        "relevant-tailored-training"
+      ],
+      "figuresVerifiedAgainstSource": true
+    },
+    {
+      "id": "ibm-codb-2026",
+      "name": "IBM Cost of a Data Breach Report 2026",
+      "publisher": "IBM (research by Ponemon Institute)",
+      "sourceType": "practitioner-survey",
+      "description": "Breach-cost benchmark from organizational interviews. Strongest source for the AI governance gap and for putting a dollar figure on the cost of inaction. Behavioral claims should be read cautiously; its distinctive value is cost benchmarking.",
+      "bestFor": [
+        "AI governance gap",
+        "policy without enforcing control",
+        "cost of inaction business case",
+        "shadow AI as a costed incident category"
+      ],
+      "coverageWindow": "Breaches March 2025 to February 2026; 3,558 interviews across 602 organizations, 16 countries, 17 industries",
+      "published": "2026-07-29",
+      "lastUpdated": "2026-09-06",
+      "officialLink": "https://www.ibm.com/reports/data-breach",
+      "file": "research/ibm-cost-of-a-data-breach-2026.md",
+      "primaryOutcomes": [
+        "governance-documentation",
+        "risk-driven-assessment",
+        "strategic-alignment",
+        "executive-support"
       ],
       "figuresVerifiedAgainstSource": true
     }
