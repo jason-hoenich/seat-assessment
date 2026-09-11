@@ -37,6 +37,7 @@ Different evidence supports different arguments. Reaching for the wrong type pro
 | Practitioner survey | What program owners report about their programs | Resourcing arguments, expectation setting | Claims about incident rates or effectiveness |
 | Population survey | Self-reported attitudes and behavior | Behavior versus awareness arguments | Precise behavioral rates; self-report understates risk |
 | Usage telemetry | Observed tool usage by real employees, classified by a vendor | Where work actually happens; what tenant-keyed guidance and governance fail to reach | How a workforce behaves in general; violation, incident, or exposure rates; the panel is the vendor's own customers |
+| Government guidance | Prescriptive best practices from a government agency, often citing third-party incident studies and surveys within its own text | What a program should teach, measure, or document; reporting-culture design; training-content checklists | Compliance requirements (this guide states its own recommendations are not required by law); precision claims about workforce behavior beyond what the cited study supports, which belongs to that study, not to the agency |
 
 ## Combining sources
 
