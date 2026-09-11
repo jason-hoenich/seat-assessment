@@ -99,7 +99,7 @@ Render a compliance view: overall alignment score, met/gap per requirement, any 
 
 After the report, and after any compliance mapping, ask: "Want to see what your weakest outcomes look like against published research?"
 
-List what is available by reading `research/index.json`. Each entry names the source, its publisher, what kind of evidence it is, and what it is best used for. The set currently covers frontline threat telemetry, practitioner staffing benchmarks, workforce behavior research, measured AI behavior data, and observed AI usage telemetry.
+List what is available by reading `research/index.json`. Each entry names the source, its publisher, what kind of evidence it is, and what it is best used for. The set currently covers frontline threat telemetry, practitioner staffing benchmarks, workforce behavior research, measured AI behavior data, observed AI usage telemetry, breach-corpus and breach-cost evidence, and federal program guidance on insider threat mitigation.
 
 When the respondent picks one, or asks for a specific report by name:
 
