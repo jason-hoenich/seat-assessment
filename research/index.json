@@ -194,6 +194,35 @@
         "executive-support"
       ],
       "figuresVerifiedAgainstSource": true
+    },
+    {
+      "id": "cisa-2026-itmg",
+      "name": "CISA Insider Threat Mitigation Guide (2026 Edition)",
+      "publisher": "Cybersecurity and Infrastructure Security Agency (CISA)",
+      "sourceType": "government-guidance",
+      "description": "Federal best-practice guidance on building insider threat mitigation programs, citing third-party incident studies and surveys on leakage, reporting, grievance, and AI-driven risk. Strongest source for reporting-culture design, training-content checklists, and the case for treating insider risk as more than phishing.",
+      "bestFor": [
+        "reporting culture design",
+        "insider-threat training curriculum",
+        "grievance as a risk signal",
+        "AI as a two-directional insider risk",
+        "onboarding and training cadence"
+      ],
+      "coverageWindow": "Program guidance current as of publication; cites underlying studies collected 2005-2025",
+      "published": "2026-09-01",
+      "lastUpdated": "2026-09-11",
+      "officialLink": "https://www.cisa.gov/resources-tools/resources/insider-threat-mitigation-guide",
+      "file": "research/cisa-2026-insider-threat-mitigation-guide.md",
+      "primaryOutcomes": [
+        "active-participation",
+        "feedback-responsiveness",
+        "executive-support",
+        "risk-driven-assessment",
+        "relevant-tailored-training",
+        "integrated-training-lifecycle",
+        "governance-documentation"
+      ],
+      "figuresVerifiedAgainstSource": true
     }
   ]
 }
