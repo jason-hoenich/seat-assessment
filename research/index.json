@@ -68,26 +68,33 @@
       "figuresVerifiedAgainstSource": true
     },
     {
-      "id": "cybsafe-2026",
-      "name": "CybSafe Oh, Behave! 2025-2026",
-      "publisher": "CybSafe",
+      "id": "cybsafe-2026-27",
+      "name": "CybSafe Oh, Behave! 2026-2027",
+      "publisher": "CybSafe and the National Cybersecurity Alliance",
       "sourceType": "population-survey",
-      "description": "Population-level attitudes and self-reported behavior. Strongest source for arguing that knowing and doing are separate problems.",
+      "description": "Population-level attitudes and self-reported behavior across five countries. Strongest source for arguing that knowing, confidence, and satisfaction with training are separate from doing, and for the AI guidance and reporting-loop gaps behind unsanctioned behavior.",
       "bestFor": [
         "behavior versus awareness",
         "AI policy versus practice",
-        "content relevance"
+        "reporting loop design",
+        "training impact versus satisfaction",
+        "cohort and sector targeting"
       ],
-      "coverageWindow": "4,573 participants across 7 countries, fieldwork May 2-27 2025",
-      "published": "2025-09-29",
-      "lastUpdated": "2026-08-31",
+      "coverageWindow": "5,000 adults across US, UK, India, Brazil, Singapore; fieldwork April 28 to May 19 2026",
+      "published": "2026-10-22",
+      "lastUpdated": "2026-10-22",
       "officialLink": "https://www.cybsafe.com/research/",
-      "file": "research/cybsafe-2026-oh-behave.md",
+      "file": "research/cybsafe-2026-27-oh-behave.md",
       "primaryOutcomes": [
         "risk-driven-assessment",
+        "governance-documentation",
+        "performance-measurement",
+        "feedback-responsiveness",
+        "active-participation",
+        "targeted-communication",
         "relevant-tailored-training",
-        "cultural-relevance",
-        "effective-learning-methods"
+        "effective-learning-methods",
+        "integrated-training-lifecycle"
       ],
       "figuresVerifiedAgainstSource": true
     },

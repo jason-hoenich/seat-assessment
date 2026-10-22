@@ -1,5 +1,7 @@
 # CybSafe Oh, Behave! 2025-2026
 
+> **Superseded** by the 2026-2027 edition, `research/cybsafe-2026-27-oh-behave.md` (source id `cybsafe-2026-27`). Kept for reference only; the two editions use different country samples and question designs, so do not compare figures between them.
+
 Population-level data on what people actually do, mapped to the SEAT outcomes it informs.
 
 **Publisher:** CybSafe, with Dr. Suzie Dobrontei and Dr. Jason R.C. Nurse
