@@ -29,7 +29,7 @@ https://raw.githubusercontent.com/jason-hoenich/seat-assessment/<commit-sha>/AGE
 
 Review the files at that commit once, then reference the pinned URLs. The content at a commit SHA cannot change.
 
-Air-gapped environments: clone the repo, review the three files (AGENTS.md, assessment/questions.md, assessment/facilitation.md), and attach them to your assistant directly. Nothing requires network access.
+Air-gapped environments: clone the repo, review the four files (AGENTS.md, assessment/questions.md, assessment/ai-module.md, assessment/facilitation.md), and attach them to your assistant directly. Nothing requires network access.
 
 ## Reporting
 

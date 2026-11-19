@@ -61,6 +61,10 @@ To score an outcome, average the scores of every question mapped to it, skipping
 - **Flexible Effective Delivery** (`flexible-effective-delivery`) -- scored from Q20
 - **Integrated Training Lifecycle** (`integrated-training-lifecycle`) -- scored from Q21
 
+### AI module
+
+- **AI Risk Readiness** (`ai-risk-readiness`) -- scored from the AI module, Q901 to Q907 (`assessment/ai-module.md`). It is reported on its own and is never part of a pillar or overall score. If the AI module was not answered, treat any requirement mapped to it as **not assessed**, the same way as the behavioral-impact outcomes below.
+
 ## Outcomes the core instrument does not score
 
 Two outcomes, `behavioral-impact` and `behavioral-impact-assessment`, are referenced by adapters but are not scored by any of the 21 core questions. In the hosted assessment they are scored by additional framework-specific questions that are outside this core instrument. Here, any requirement mapped to them is reported as **not assessed** rather than as a gap, and is excluded from the overall alignment score. Reporting them as gaps would mark every program as failing a requirement it was never asked about, and would drag every score down by a fixed amount. If you need those outcomes scored, the hosted assessment at https://app.humanrisk.com asks the additional questions.
