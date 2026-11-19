@@ -19,8 +19,8 @@ This is a free resource from [HumanRisk](https://humanrisk.com). No gating, no e
 
 1. Clone this repo.
 2. Open `AGENTS.md` in your LLM of choice and say: **"Run the SEAT assessment."**
-3. The LLM will walk you through all 21 questions, one pillar at a time.
-4. At the end you get per-pillar scores, an overall maturity level, your top gaps, and recommended next steps.
+3. The LLM will walk you through all 21 core questions, one pillar at a time, then the 7-question AI module.
+4. At the end you get per-pillar scores, an overall maturity level, a separate AI readiness score, your top gaps, and recommended next steps.
 5. When it offers, pick a compliance framework and it will map your results against that framework locally.
 6. When it offers, pick a research source and it will read your weakest outcomes against published threat and benchmark data, locally.
 
@@ -28,7 +28,7 @@ If you use Claude (Anthropic), open `CLAUDE.md` instead -- it is identical to `A
 
 Not sure what to ask for beyond the assessment itself? [Run the Framework With Any AI](https://app.humanrisk.com/framework/llm) has fifteen copy-paste prompts built on these files: running a single pillar, mapping your results to a compliance framework, building the staffing business case, reading your results against published research, and turning your gaps into a 90-day plan.
 
-Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand. Cloning is the safer default, because an assistant fetching live URLs picks up whatever those files say at that moment. If you are running this against sensitive results, review the files once and then reference them pinned to that commit SHA rather than to `main`. `SECURITY.md` shows the URL form and explains why.
+Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `assessment/questions.md`, `assessment/ai-module.md`, and `adapters/outcomes.md`, and let it fetch individual adapter files on demand. Cloning is the safer default, because an assistant fetching live URLs picks up whatever those files say at that moment. If you are running this against sensitive results, review the files once and then reference them pinned to that commit SHA rather than to `main`. `SECURITY.md` shows the URL form and explains why.
 
 ## What's in the box
 
@@ -37,6 +37,7 @@ Working from URLs instead of a clone? Point your assistant at `AGENTS.md`, `asse
 | `AGENTS.md` / `CLAUDE.md` | Instructions for any LLM to administer the assessment conversationally |
 | `assessment/questions.md` | The 21-question core instrument in readable markdown |
 | `assessment/questions.json` | The same instrument in machine-readable JSON |
+| `assessment/ai-module.md` / `.json` | The 7-question AI module, asked after the core and scored separately |
 | `assessment/scoring.md` | Scoring rules and maturity bands |
 | `assessment/facilitation.md` | Per-question context: why each question exists, what strong looks like, and the trap that inflates scores |
 | `adapters/` | 16 compliance and AI governance framework mappings, applied locally by your assistant |

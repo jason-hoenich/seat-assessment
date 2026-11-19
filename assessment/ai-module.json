@@ -1,0 +1,242 @@
+{
+  "version": "seat-ai-module",
+  "module_version": "1.0",
+  "question_count": 7,
+  "outcome": "ai-risk-readiness",
+  "scored_separately": true,
+  "note": "Asked after the 21 core questions. Answers never change pillar or overall scores; they produce a separate AI readiness score.",
+  "pillars": {
+    "strategy": {
+      "question_count": 2,
+      "question_ids": [
+        901,
+        902
+      ]
+    },
+    "engagement": {
+      "question_count": 1,
+      "question_ids": [
+        903
+      ]
+    },
+    "training": {
+      "question_count": 2,
+      "question_ids": [
+        904,
+        905
+      ]
+    },
+    "assessment": {
+      "question_count": 2,
+      "question_ids": [
+        906,
+        907
+      ]
+    }
+  },
+  "questions": [
+    {
+      "id": 901,
+      "pillar": "strategy",
+      "title": "AI Use Policy and Ownership",
+      "text": "How clearly does your organization define acceptable AI use, and who owns it?",
+      "help": "Covers generative AI, AI-assisted coding and AI agents. Ownership means a named person or team accountable for the policy, not just a document.",
+      "options": [
+        {
+          "value": 1,
+          "label": "No AI use policy and no owner"
+        },
+        {
+          "value": 2,
+          "label": "Informal guidance or a general policy line, with no clear owner"
+        },
+        {
+          "value": 3,
+          "label": "Written AI use policy with a named owner; the awareness program is consulted"
+        },
+        {
+          "value": 4,
+          "label": "Policy co-owned with security awareness and reviewed on a set schedule"
+        },
+        {
+          "value": 5,
+          "label": "Policy co-owned by security awareness, reviewed with leadership, and updated as tools change"
+        }
+      ]
+    },
+    {
+      "id": 902,
+      "pillar": "strategy",
+      "title": "AI Tool Visibility",
+      "text": "How well does your program know which AI tools employees use, sanctioned and unsanctioned?",
+      "help": "Includes free and personal accounts used for work. Visibility usually comes from DLP, CASB, browser or network telemetry, owned by another team.",
+      "options": [
+        {
+          "value": 1,
+          "label": "No visibility into which AI tools are used"
+        },
+        {
+          "value": 2,
+          "label": "Anecdotal knowledge from requests and incidents only"
+        },
+        {
+          "value": 3,
+          "label": "Known for sanctioned tools, partial for unsanctioned ones"
+        },
+        {
+          "value": 4,
+          "label": "Regular reporting across sanctioned and unsanctioned tools, by department"
+        },
+        {
+          "value": 5,
+          "label": "Continuous visibility across tools and account types, feeding program priorities"
+        }
+      ]
+    },
+    {
+      "id": 903,
+      "pillar": "engagement",
+      "title": "AI Guidance Reach",
+      "text": "Does your AI guidance reach the groups that use AI most, not just the enterprise tenant?",
+      "help": "Heavy AI use tends to concentrate in a few functions (often legal, sales and marketing, and engineering), and much of it happens outside the sanctioned tool.",
+      "options": [
+        {
+          "value": 1,
+          "label": "No AI guidance, or none beyond the policy itself"
+        },
+        {
+          "value": 2,
+          "label": "One all-staff message or module for everyone"
+        },
+        {
+          "value": 3,
+          "label": "Guidance targeted to some high-use groups"
+        },
+        {
+          "value": 4,
+          "label": "Role-specific guidance for most high-use groups"
+        },
+        {
+          "value": 5,
+          "label": "Tailored by role for every high-use group, including personal-account use"
+        }
+      ]
+    },
+    {
+      "id": 904,
+      "pillar": "training",
+      "title": "AI-Enabled Social Engineering",
+      "text": "How well are employees prepared for AI-enabled social engineering, such as deepfake voice and video or AI-written lures?",
+      "help": "Preparation means a verification habit (for example, calling back on a known number) that employees practice, not only awareness that deepfakes exist.",
+      "options": [
+        {
+          "value": 1,
+          "label": "Not covered"
+        },
+        {
+          "value": 2,
+          "label": "Mentioned in general awareness content"
+        },
+        {
+          "value": 3,
+          "label": "Covered in content, with a clear verification rule"
+        },
+        {
+          "value": 4,
+          "label": "Practiced in simulations for high-risk roles"
+        },
+        {
+          "value": 5,
+          "label": "Practiced in simulations, with out-of-band verification habits measured"
+        }
+      ]
+    },
+    {
+      "id": 905,
+      "pillar": "training",
+      "title": "Safe AI Use",
+      "text": "How well are employees trained in safe AI use: what to paste, reviewing output, and granting agent and tool permissions?",
+      "help": "Covers generative AI, AI-assisted coding and AI agents that act on an employee's behalf.",
+      "options": [
+        {
+          "value": 1,
+          "label": "Not covered"
+        },
+        {
+          "value": 2,
+          "label": "Policy acknowledgment only"
+        },
+        {
+          "value": 3,
+          "label": "Annual module on safe AI use"
+        },
+        {
+          "value": 4,
+          "label": "Role-specific training covering generative AI and AI-assisted coding"
+        },
+        {
+          "value": 5,
+          "label": "Role-specific and in the workflow, covering generative AI, AI-assisted coding and agents"
+        }
+      ]
+    },
+    {
+      "id": 906,
+      "pillar": "assessment",
+      "title": "AI Behavior Measurement",
+      "text": "How does your program measure AI-related behavior?",
+      "help": "Observed behavior means events such as sensitive data pasted into AI tools or permissions granted to AI apps, not completion or acknowledgment rates.",
+      "options": [
+        {
+          "value": 1,
+          "label": "Not measured"
+        },
+        {
+          "value": 2,
+          "label": "Policy acknowledgment and training completion only"
+        },
+        {
+          "value": 3,
+          "label": "Some observed behavior, reviewed occasionally"
+        },
+        {
+          "value": 4,
+          "label": "Observed behavior tracked regularly and reported"
+        },
+        {
+          "value": 5,
+          "label": "Observed behavior tracked, trended and used to set program priorities"
+        }
+      ]
+    },
+    {
+      "id": 907,
+      "pillar": "assessment",
+      "title": "AI Incident Reporting",
+      "text": "Do employees know how to report AI misuse or an AI mistake, and can the organization investigate it?",
+      "help": "For example, an employee who pasted customer data into a public AI tool: would they know where to report it, and would someone pick it up?",
+      "options": [
+        {
+          "value": 1,
+          "label": "No reporting path for AI misuse"
+        },
+        {
+          "value": 2,
+          "label": "Reported informally, if at all"
+        },
+        {
+          "value": 3,
+          "label": "A reporting path exists but is rarely used"
+        },
+        {
+          "value": 4,
+          "label": "A known reporting path that is used, with defined triage"
+        },
+        {
+          "value": 5,
+          "label": "Used regularly, and investigations feed back into training"
+        }
+      ]
+    }
+  ]
+}

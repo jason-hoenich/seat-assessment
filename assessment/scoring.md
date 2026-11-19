@@ -31,6 +31,10 @@ Map pillar averages and the overall average to a maturity level:
 | 3.5 -- 4.49 | **Integrated** | A mature, well-integrated approach that is consistent and effective. |
 | 4.5 -- 5.0 | **Embedded** | Exemplifies industry-leading practices, fully optimized for impact and efficiency. |
 
+### AI readiness score
+
+The AI module (`assessment/ai-module.md`, Q901 to Q907) is scored on its own: average its answers, skipping N/A, and map the result to the same levels. It is reported next to the pillar scores and never enters a pillar or the overall score, so results stay comparable with assessments taken before the module existed.
+
 ## Maturity level descriptions by pillar
 
 ### Reactive (1)

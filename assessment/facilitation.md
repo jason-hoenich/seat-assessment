@@ -187,3 +187,62 @@ The standing rule from AGENTS.md applies: when in doubt between two levels, reco
 **What good looks like:** Security woven into onboarding from day one, refreshed at role changes and promotions, and present in development plans so security fluency grows with seniority.
 
 **Honest-scoring tip:** A security slide inside HR's onboarding deck is presence without integration. If nothing security-related happens between onboarding and the next annual training, score 2.
+
+
+## AI Module
+
+### Q901: AI Use Policy and Ownership
+
+**Why this matters:** A policy with no owner is a document, and documents do not update themselves when a new AI tool shows up every month. Ownership is what keeps the rules attached to the tools people actually use.
+
+**What good looks like:** A written AI use policy with a named owner, co-owned by security awareness so the rules arrive as behavior people can follow, reviewed with leadership on a schedule.
+
+**Honest-scoring tip:** A line about AI added to the acceptable use policy is a 2. If you cannot name the person who would approve a change to it this week, do not score above 2.
+
+### Q902: AI Tool Visibility
+
+**Why this matters:** You cannot aim guidance at tools you cannot see, and the unsanctioned ones, often on free or personal accounts, are where data leaves.
+
+**What good looks like:** Regular reporting from DLP, CASB or browser telemetry on which AI tools are in use, by department and account type, feeding what the program teaches next.
+
+**Honest-scoring tip:** Knowing the sanctioned tool's license count is not visibility. If your answer comes from requests and incident tickets, score 2. This data usually sits with another team; ask them before you score.
+
+### Q903: AI Guidance Reach
+
+**Why this matters:** AI use concentrates in a few functions, and much of it happens outside the enterprise tenant. One all-staff message lands hardest on the people who use AI least.
+
+**What good looks like:** Role-specific guidance for each high-use group, written for how that group actually works, including what to do on a personal account.
+
+**Honest-scoring tip:** If every employee received the same AI module, that is a 2, however good the module is.
+
+### Q904: AI-Enabled Social Engineering
+
+**Why this matters:** A cloned voice on a call from "the CFO" defeats every instinct built on spotting bad grammar. What protects people is a verification habit, practiced before the call comes.
+
+**What good looks like:** A clear verification rule (call back on a known number, use a second channel) that high-risk roles practice in simulation, with the habit measured.
+
+**Honest-scoring tip:** A slide explaining what deepfakes are is awareness, not preparation. Without a rule people can recite, score 2 at most.
+
+### Q905: Safe AI Use
+
+**Why this matters:** The everyday AI risks are ordinary actions: pasting customer data, shipping output nobody checked, clicking Allow on an agent's permission request. Each one needs its own behavior.
+
+**What good looks like:** Role-specific training delivered in the workflow, covering generative AI, AI-assisted coding and agents, with a specific behavior for each.
+
+**Honest-scoring tip:** A policy acknowledgment checkbox is a 2. If your training does not mention agents or AI coding tools and your developers use them, do not score above 3.
+
+### Q906: AI Behavior Measurement
+
+**Why this matters:** Completion and acknowledgment rates say the message was delivered. Whether data is still being pasted into public tools says whether it worked.
+
+**What good looks like:** Observed AI behavior, such as sensitive-data paste events and AI app permission grants, tracked over time and used to set priorities.
+
+**Honest-scoring tip:** If the only AI number you can show leadership is a training completion rate, score 2.
+
+### Q907: AI Incident Reporting
+
+**Why this matters:** Most AI mistakes are quiet. An employee who pasted the wrong file will only report it if there is somewhere to report it and it is safe to do so.
+
+**What good looks like:** A known reporting path for AI misuse or mistakes, triaged with IR, framed so that self-reporting is expected, with resolved cases feeding back into training.
+
+**Honest-scoring tip:** "They would email security" is a 2. Ask whether anyone has ever used the path; if not, score 3 at most.
